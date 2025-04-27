@@ -1,0 +1,68 @@
+:root {
+  --blue-c: 0.0545;
+  --blue-h: 260;
+  --indigo-c: 0.3;
+  --indigo-h: 275;
+  --purple-c: 0.2;
+  --purple-h: 320;
+  --pink-c: 0.25;
+  --pink-h: 0;
+  --red-c: 0.25;
+  --red-h: 25;
+  --orange-c: 0.25;
+  --orange-h: 50;
+  --yellow-c: 0.18;
+  --yellow-h: 85;
+  --green-c: 0.2;
+  --green-h: 140;
+  --teal-c: 0.2;
+  --teal-h: 160;
+  --cyan-c: 0.2;
+  --cyan-h: 210;
+  --pri-hue: var(--blue-h);
+  --pri-chroma: var(--blue-c);
+  --sec-hue: var(--indigo-h);
+  --sec-chroma: var(--indigo-c);
+	--info-hue: var(--blue-h);
+	--success-hue: var(--green-h);
+	--warning-hue: var(--orange-h);
+	--danger-hue: var(--red-h);
+	--gray-hue: 248;
+	--gray-chroma: 0.015;
+  --neutral-hue: 248;
+	--neutral-chroma: 0.0;
+  --a: 100%;
+
+  --bor-color: var(--gray-100);
+  --bor-rad: 6px;
+  --bor-width: 2px;
+
+  --h-font: 'Tajawal', serif;
+  --b-font: 'Tajawal', sans-serif;
+  --m-font: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
+    'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace;
+  --l-spacing: var(--font-letterspacing-1);
+  --w-spacing: var(--font-letterspacing-2);
+  --h-pos: left;
+  --f-wght: 400;
+  --h-font-wght: 700;
+
+  --line-height: calc(1.1em + 0.6rem);
+  --line-height-list: 1.5;
+  --line-height-headings: 1.2;
+
+  --dur: 0.35s;
+  --trans: ease-in-out;
+
+  --s-width: 65ch;
+  --m-width: 110ch;
+  --l-width: 130ch;
+
+  --inner-shadow: 0px 1px 1px var(--sec-500);
+  --shadow-sm: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11);
+  --shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1),
+    0 6px 8px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 2px 1px rgba(0, 0, 0, 0.09), 0 4px 2px rgba(0, 0, 0, 0.09), 0 8px 4px rgba(0, 0, 0, 0.09),
+    0 16px 8px rgba(0, 0, 0, 0.09), 0 32px 16px rgba(0, 0, 0, 0.09);
+}

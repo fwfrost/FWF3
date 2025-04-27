@@ -1,0 +1,9 @@
+svg:has(use[href*="#fa"]),
+svg:has(use[xlink\:href*="#fa"]) {
+  display: inline;
+  fill: currentColor;
+  height: 1em;
+  margin-right: .4rem;
+  vertical-align: middle;
+  width: 1em;
+}

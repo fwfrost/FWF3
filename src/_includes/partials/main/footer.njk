@@ -1,0 +1,36 @@
+<footer>
+  <div class="n--wrapper footer--container">
+    <div class="footer--block">
+      <p class="footer--heading">Pages</p>
+      {%- include "partials/micro/footer-nav.njk" -%}
+    </div>
+    <div class="footer--block">
+      <p class="footer--heading">Contact Us</p>
+      {%- include "partials/micro/phone.njk" -%}
+    </div>
+    <div class="footer--block">
+      <p class="footer--heading">Find Us</p>
+      {%- include "partials/micro/address.njk" -%}
+    </div>
+    <div class="footer--block">
+      <p class="footer--heading">Download Brochure</p>
+        <p>For a comprehensive list of<br> F.W.Frost (Engineers) Ltd<br> equipment and machinery.</p>
+        <a target="_blank" aria-label="Download Capacity List" href="/docs/fwfrost_capacity_list.pdf">{% icon "far:file-pdf" %}</a>
+    </div>
+    <div class="footer--block">
+      <p class="footer--heading">Socials</p>
+      <div class="socials">
+        <a href="https://en-gb.facebook.com/pg/FWFROSTLTD/about/" aria-label="Facebook" target="_blank">{% icon "fab:facebook" %}</a>
+          <a href="https://twitter.com/FWFrostLtd" aria-label="Twitter" target="_blank">{% icon "fab:twitter" %}</a>
+         <a href="https://www.linkedin.com/company/f-w-frost-engineers-ltd/" aria-label="LinkedIn" target="_blank">{% icon "fab:linkedin" %}</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="copyright">
+    <p>Copyright {% icon "far:copyright" %} 1947 - {{ buildInfo.time.raw | year }} {{ site.name }} - Website by <a href="https://fatbuddhadesigns.co.uk"  aria-label="Fat Buddha Designs, Designers of this website">Fat Buddha Designs</a></p>
+    <div>{%- include "partials/micro/second-footer-nav.njk" -%}</div>
+  </div>
+</footer>
+
+<a href="#page-top" class="scrollup" aria-label="scroll to the top of this page">{% icon "fas:angle-up" %}</a>

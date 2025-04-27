@@ -1,0 +1,17 @@
+{% if postListItems.length %}
+
+<ul class="post--list">
+  {% for item in postListItems %}
+  <li class="post--list--block | flow">
+    <h2>
+      <a href="{{ item.url }}" rel="bookmark">{{ item.data.title }}</a>
+    </h2>
+    <div>
+    <p class="is--meta">Author: {{ site.authorName }}</p>
+    <p class="is--meta">Published: <time datetime="{{ item.date | dateFeed }}">{{ item.date | dateToFormat }}</time></p>
+    </div>
+    {{ item.content | safe | truncate(300 )}}
+  </li>
+  {% endfor %}
+</ul>
+{% endif %}

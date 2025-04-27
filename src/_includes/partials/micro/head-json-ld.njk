@@ -1,0 +1,39 @@
+{# Json-ld #}
+<script type="application/ld+json">
+  {
+    "@context": "http://www.schema.org",
+    "@type": "LocalBusiness",
+    "name": "{{ site.name }}",
+    "url":" {{ site.url + page.url }}",
+    "logo": "{{ site.url }}/assets/images/logo.svg",
+    "image": "{{ site.url }}{% GenerateSocialImage title %}",
+    "description": "{{ description or site.description }}",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "{{ site.address }}, {{ site.village }}",
+      "addressLocality": "{{ site.city }}",
+      "addressRegion": "{{ site.county }}",
+      "postalCode": "{{ site.postcode }}",
+      "addressCountry": "United Kingdom"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "{{ site.latitude }}",
+      "longitude": "{{ site.longitude }}"
+    },
+    "telephone": "{{ site.intPhone }}",
+    "email": "{{ site.email }}",
+    "priceRange": "{{ site.priceRange }}",
+    "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+      "dayOfWeek ":["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens":"{{ site.opens }}",
+      "closes":"{{ site.closes }}"
+    },
+    "sameAs": [
+      "{{ site.linkedinSite }}",
+      "{{ site.twitterSite }}",
+      "{{ site.yellSite }}"
+    ]
+  }
+</script>

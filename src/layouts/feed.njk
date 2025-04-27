@@ -1,0 +1,21 @@
+---
+layout: base
+pageType: blog
+---
+
+{% set postListItems = pagination.items %}
+
+{%- if tag -%}
+  {% set postListItems = collections[tag] %}
+{%- endif -%}
+
+
+{% block content %}
+<section class="m--wrapper">
+  <h1>{{ title }}</h1>
+    {%- include "partials/micro/post-list.njk" -%}
+    {%- if not tag -%}
+    {% include "partials/micro/pagination.njk" %}
+    {%- endif -%}
+</section>
+{% endblock %}

@@ -1,0 +1,9 @@
+*:not(path):not(g) {
+  --hsla-color: 210, 100%, 50%, 0.5;
+  --hsla-color-drk: 210, 100%, 100%, 0.9;
+  --hsla-color-lgt: 210, 100%, 100%, 0.5;
+  background: hsla(var(--hsla-color));
+  box-shadow: none;
+  color: hsla(var(--hsla-color-drk));
+  outline: solid 2px hsla(var(--hsla-color-lgt));
+}

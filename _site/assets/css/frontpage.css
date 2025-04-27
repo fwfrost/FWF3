@@ -1,0 +1,27 @@
+.frontpage--block--container {
+  background-color: var(--pale-50);
+  margin-bottom: 2rem;
+  margin-left: 50%;
+  margin-top: 0.5rem;
+  padding: 5vh 3vh;
+  transform: translateX(-50%);
+  width: 100vw;
+}
+
+@media (min-width: 767px) {
+  .frontpage--block--container {
+    padding: 5vh 8vh;
+  }
+}
+@media (min-width: 1023px) {
+  .frontpage--block--container {
+    padding: 5vh 15vh;
+  }
+}
+@media (min-width: 1279px) {
+  .frontpage--block--container {
+    padding: 5vh 30vh;
+  }
+}
+
+/*# sourceMappingURL=frontpage.css.map */

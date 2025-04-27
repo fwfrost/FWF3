@@ -1,0 +1,132 @@
+:root {
+	--lightness-00: 97%;
+	--lightness-25: 95%;
+	--lightness-50: 93%;
+	--lightness-100: 90%;
+	--lightness-200: 80%;
+	--lightness-300: 70%;
+	--lightness-400: 60%;
+	--lightness-500: 50%;
+	--lightness-600: 40%;
+	--lightness-700: 30%;
+	--lightness-800: 20%;
+	--lightness-900: 10%;
+
+	--f-color: oklch(15% 0 0);
+	--f-color-inv: oklch(100% 0 0);
+	--bkgd-color: oklch(100% 0 0);
+	--blk-color: oklch(12% 0 0);
+	--wh-color: oklch(100% 0 0);
+
+	--pri-100: oklch(var(--lightness-100) var(--pri-chroma) var(--pri-hue)/ var(--a));
+	--pri-200: oklch(var(--lightness-200) var(--pri-chroma) var(--pri-hue)/ var(--a));
+	--pri-300: oklch(var(--lightness-300) var(--pri-chroma) var(--pri-hue)/ var(--a));
+	--pri-400: oklch(var(--lightness-400) var(--pri-chroma) var(--pri-hue)/ var(--a));
+	--pri-500: oklch(var(--lightness-500) var(--pri-chroma) var(--pri-hue)/ var(--a));
+	--pri-600: oklch(var(--lightness-500) var(--pri-chroma) var(--pri-hue)/ var(--a));
+	--pri-700: oklch(var(--lightness-700) var(--pri-chroma) var(--pri-hue)/ var(--a));
+	--pri-800: oklch(var(--lightness-800) var(--pri-chroma) var(--pri-hue)/ var(--a));
+	--pri-900: oklch(var(--lightness-900) var(--pri-chroma) var(--pri-hue)/ var(--a));
+
+	--sec-100: oklch(var(--lightness-100) var(--sec-chroma) var(--sec-hue)/ var(--a));
+	--sec-200: oklch(var(--lightness-200) var(--sec-chroma) var(--sec-hue)/ var(--a));
+	--sec-300: oklch(var(--lightness-300) var(--sec-chroma) var(--sec-hue)/ var(--a));
+	--sec-400: oklch(var(--lightness-400) var(--sec-chroma) var(--sec-hue)/ var(--a));
+	--sec-500: oklch(var(--lightness-500) var(--sec-chroma) var(--sec-hue)/ var(--a));
+	--sec-600: oklch(var(--lightness-600) var(--sec-chroma) var(--sec-hue)/ var(--a));
+	--sec-700: oklch(var(--lightness-700) var(--sec-chroma) var(--sec-hue)/ var(--a));
+	--sec-800: oklch(var(--lightness-800) var(--sec-chroma) var(--sec-hue)/ var(--a));
+	--sec-900: oklch(var(--lightness-900) var(--sec-chroma) var(--sec-hue)/ var(--a));
+
+	--info-100: oklch(var(--lightness-100) 0.08 var(--info-hue)/ var(--a));
+	--info-200: oklch(var(--lightness-200) 0.12 var(--info-hue)/ var(--a));
+	--info-300: oklch(var(--lightness-300) 0.17 var(--info-hue)/ var(--a));
+	--info-400: oklch(var(--lightness-400) 0.2 var(--info-hue)/ var(--a));
+	--info-500: oklch(var(--lightness-500) 0.22 var(--info-hue)/ var(--a));
+	--info-600: oklch(var(--lightness-600) 0.2 var(--info-hue)/ var(--a));
+	--info-700: oklch(var(--lightness-700) 0.17 var(--info-hue)/ var(--a));
+	--info-800: oklch(var(--lightness-800) 0.12 var(--info-hue)/ var(--a));
+	--info-900: oklch(var(--lightness-900) 0.08 var(--info-hue)/ var(--a));
+
+	--success-100: oklch(var(--lightness-100) 0.08 var(--success-hue)/ var(--a));
+	--success-200: oklch(var(--lightness-200) 0.12 var(--success-hue)/ var(--a));
+	--success-300: oklch(var(--lightness-300) 0.17 var(--success-hue)/ var(--a));
+	--success-400: oklch(var(--lightness-400) 0.2 var(--success-hue)/ var(--a));
+	--success-500: oklch(var(--lightness-500) 0.22 var(--success-hue)/ var(--a));
+	--success-600: oklch(var(--lightness-600) 0.2 var(--success-hue)/ var(--a));
+	--success-700: oklch(var(--lightness-700) 0.17 var(--success-hue)/ var(--a));
+	--success-800: oklch(var(--lightness-800) 0.12 var(--success-hue)/ var(--a));
+	--success-900: oklch(var(--lightness-900) 0.08 var(--success-hue)/ var(--a));
+
+	--warning-100: oklch(var(--lightness-100) 0.08 var(--warning-hue)/ var(--a));
+	--warning-200: oklch(var(--lightness-200) 0.12 var(--warning-hue)/ var(--a));
+	--warning-300: oklch(var(--lightness-300) 0.17 var(--warning-hue)/ var(--a));
+	--warning-400: oklch(var(--lightness-400) 0.2 var(--warning-hue)/ var(--a));
+	--warning-500: oklch(var(--lightness-500) 0.22 var(--warning-hue)/ var(--a));
+	--warning-600: oklch(var(--lightness-600) 0.2 var(--warning-hue)/ var(--a));
+	--warning-700: oklch(var(--lightness-700) 0.17 var(--warning-hue)/ var(--a));
+	--warning-800: oklch(var(--lightness-800) 0.12 var(--warning-hue)/ var(--a));
+	--warning-900: oklch(var(--lightness-900) 0.08 var(--warning-hue)/ var(--a));
+
+	--danger-100: oklch(var(--lightness-100) 0.08 var(--danger-hue)/ var(--a));
+	--danger-200: oklch(var(--lightness-200) 0.12 var(--danger-hue)/ var(--a));
+	--danger-300: oklch(var(--lightness-300) 0.17 var(--danger-hue)/ var(--a));
+	--danger-400: oklch(var(--lightness-400) 0.2 var(--danger-hue)/ var(--a));
+	--danger-500: oklch(var(--lightness-500) 0.22 var(--danger-hue)/ var(--a));
+	--danger-600: oklch(var(--lightness-600) 0.2 var(--danger-hue)/ var(--a));
+	--danger-700: oklch(var(--lightness-700) 0.17 var(--danger-hue)/ var(--a));
+	--danger-800: oklch(var(--lightness-800) 0.12 var(--danger-hue)/ var(--a));
+	--danger-900: oklch(var(--lightness-900) 0.08 var(--danger-hue)/ var(--a));
+
+	--gray-100: oklch(var(--lightness-100) var(--gray-chroma) var(--gray-hue)/ var(--a));
+	--gray-200: oklch(var(--lightness-200) var(--gray-chroma) var(--gray-hue)/ var(--a));
+	--gray-300: oklch(var(--lightness-300) var(--gray-chroma) var(--gray-hue)/ var(--a));
+	--gray-400: oklch(var(--lightness-400) var(--gray-chroma) var(--gray-hue)/ var(--a));
+	--gray-500: oklch(var(--lightness-500) var(--gray-chroma) var(--gray-hue)/ var(--a));
+	--gray-600: oklch(var(--lightness-600) var(--gray-chroma) var(--gray-hue)/ var(--a));
+	--gray-700: oklch(var(--lightness-700) var(--gray-chroma) var(--gray-hue)/ var(--a));
+	--gray-800: oklch(var(--lightness-800) var(--gray-chroma) var(--gray-hue)/ var(--a));
+	--gray-900: oklch(var(--lightness-900) var(--gray-chroma) var(--gray-hue)/ var(--a));
+
+	--pale-00: oklch(var(--lightness-00) var(--neutral-chroma) var(--neutral-hue)/ var(--a));
+	--pale-25: oklch(var(--lightness-25) var(--neutral-chroma) var(--neutral-hue)/ var(--a));
+	--pale-50: oklch(var(--lightness-50) var(--neutral-chroma) var(--neutral-hue)/ var(--a));
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--lightness-00: 40%;
+		--lightness-25: 40%;
+		--lightness-50: 40%;
+		--lightness-100: 90%;
+		--lightness-200: 80%;
+		--lightness-300: 40%;
+		--lightness-400: 40%;
+		--lightness-500: 40%;
+		--lightness-600: 40%;
+		--lightness-700: 30%;
+		--lightness-800: 20%;
+		--lightness-900: 10%;
+		--f-color: oklch(100% 0 0);
+		--f-color-inv: oklch(100% 0 0);
+		--bkgd-color: oklch(20% 0.02 270);
+	}
+}
+
+[data-theme="dark"] {
+	--lightness-00: 40%;
+	--lightness-25: 40%;
+	--lightness-50: 40%;
+	--lightness-100: 90%;
+	--lightness-200: 80%;
+	--lightness-300: 40%;
+	--lightness-400: 40%;
+	--lightness-500: 40%;
+	--lightness-600: 40%;
+	--lightness-700: 30%;
+	--lightness-800: 20%;
+	--lightness-900: 10%;
+	--f-color: oklch(100% 0 0);
+	--f-color-inv: oklch(100% 0 0);
+	--bkgd-color: oklch(20% 0.02 270);
+}

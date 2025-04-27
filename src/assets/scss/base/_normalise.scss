@@ -1,0 +1,177 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent;
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+body {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  font-feature-settings: 'pnum';
+  font-size: 1rem;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant-numeric: proportional-nums;
+  font-weight: normal;
+  line-height: 1.5;
+  min-height: 100vh;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  text-rendering: optimizeLegibility;
+}
+
+*:focus:not(:focus-visible),
+*::before:focus:not(:focus-visible),
+*::after:focus:not(:focus-visible) {
+  outline: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+p,
+pre,
+blockquote,
+figure,
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+address,
+area,
+article,
+aside,
+audio,
+blockquote,
+datalist,
+details,
+dl,
+fieldset,
+figure,
+form,
+input,
+iframe,
+img,
+meter,
+ol,
+optgroup,
+option,
+output,
+p,
+pre,
+progress,
+section,
+table,
+textarea,
+ul,
+video {
+  margin-bottom: 1rem;
+}
+
+a:not([class]) {
+  color: currentColor;
+  text-decoration-skip-ink: auto;
+}
+
+a,
+area,
+button,
+[role='button'],
+input,
+label,
+select,
+summary,
+textarea {
+  touch-action: manipulation;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+:target {
+  scroll-margin-block: 5ex;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+[aria-hidden='false'][hidden] {
+  display: initial;
+}
+
+[aria-hidden='false'][hidden]:not(:focus) {
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(100%);
+  position: absolute;
+}
+
+noscript {
+  display: block;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.sr--only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.visually--hidden:not(:focus) {
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.1ms;
+    animation-iteration-count: 1;
+    transition-duration: 0.1ms;
+  }
+}

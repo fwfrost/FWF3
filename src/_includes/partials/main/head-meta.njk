@@ -1,0 +1,62 @@
+{% set absolutePageUrl = page.url | url | absoluteUrl(site.url) %}
+{% set pageTitle = title + ' | ' + site.name %}
+{% set jsonldType = jsonldType %}
+{%- if metaTitle %}{% set pageTitle = metaTitle -%}{%- endif -%}
+{% set metaImage = meta_image if meta_image else site.metaImage %}
+{# General #}
+<title>{{ pageTitle  | escape }}</title>
+<meta name="description" content="{{ description or site.description | truncate(160) }}" />
+<meta name="keywords" content="{{ keywords }}" />
+{# CSS #}
+{%- include "partials/main/stylesheets.njk" -%}
+{#  Preload Fonts #}
+{%- include "partials/micro/head-fonts.njk" -%}
+{#  Preload Header Image #}
+{%- include "partials/micro/head-images.njk" -%}
+{# Unimportant Meta #}
+{%- if indexable == "no-index" -%}
+<meta name="robots" content="noindex" />
+{%- else -%}
+<meta name="robots" content="all" />
+{%- endif -%}
+{% if indexable == "no-index" %}
+<meta name="googlebot" content="noindex" />
+{%- else -%}
+<meta name="googlebot" content="all" />
+{%- endif -%}
+<meta name="google" content="nositelinkssearchbox" />
+<meta name="google" content="notranslate" />
+<meta name="generator" content="{{ eleventy.generator }}" />
+{%- if permalink == "/" -%}
+  {% set canonicalUrl = site.url %}
+{%- else -%}
+  {% set canonicalUrl = site.url + page.url %}
+{%- endif -%}
+<link rel="canonical" href="{{ canonicalUrl | lowercase }}" />
+<link rel="shortlink" href="{{ site.url }}" />
+<link rel="author" href="{{ site.url }}/humans.txt" />
+<meta name="color-scheme" content="light dark" />
+<meta name="HandheldFriendly" content="true" />
+
+{% include "partials/micro/head-favicons.njk" %}
+{# Open Graph #}
+<meta property="og:title" content="{{ pageTitle  | escape }}" />
+<meta property="og:type" content="{{ ogType }}" />
+<meta property="og:site_name" content="{{ site.title }}" />
+<meta property="og:description" content="{{ description or site.description | truncate(160) }}" />
+<meta property="og:url" content="{{ canonicalUrl }}" />
+<meta property="og:locale" content="{{ site.locale }}" />
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image" content="{{ site.url }}{% GenerateSocialImage title %}" />
+<meta property="og:image:alt" content="Page image for {{ site.name }}" />
+{# Twitter #}
+<meta name="twitter:title" content="{{ pageTitle  | escape }}" />
+<meta name="twitter:card" content="{% if metaImage -%}summary_large_image{% else %}summary{% endif %}" />
+<meta name="twitter:site" content="@{{ site.twitterCreator | replace('@', '') }}" />
+<meta name="twitter:creator" content="@{{ site.twitterCreator | replace('@', '') }}" />
+<meta name="twitter:description" content="{{ description or site.description | truncate(160) }}" />
+<meta name="twitter:image" content="{{ site.url }}{% GenerateSocialImage title %}" />
+<meta name="twitter:image:alt" content="Page image for {{ site.name }}" />
+
+{% include "partials/micro/head-json-ld.njk" %}

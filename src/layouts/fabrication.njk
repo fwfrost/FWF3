@@ -1,0 +1,16 @@
+---
+layout: base
+---
+
+<section>
+  {{ content | safe }}
+  <div class="block--grid">
+  {%- if collections.fabImages.length > 0 -%}
+  {%- for item in collections.fabImages | sort(false, false, 'data.image') -%}
+      <img loading="lazy" src="{{ item.data.image }}" alt="{{ item.data.alt }}" />
+  {%- endfor -%}
+</div>
+{%- else -%}
+  <p>Sorry, there are no images just now.</p>
+{%- endif -%}
+</section>

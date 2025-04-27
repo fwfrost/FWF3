@@ -1,0 +1,35 @@
+.search {
+  counter-reset: ol-counter;
+  line-height: var(--line-height-list);
+  list-style: decimal inside none;
+  margin-bottom: 1rem;
+
+  p {
+    --max-lines: 2;
+    max-height: calc(var(--line-height) * var(--max-lines));
+    overflow: hidden;
+    padding-right: 1rem;
+    position: relative;
+  }
+
+  p::after {
+    content: '...';
+    margin-left: .3rem;
+    z-index: 1;
+  }
+
+  mark {
+    background-color: var(--gray-100);
+    color: var(--f-color);
+    padding: 0 .3rem .1rem;
+  }
+
+  .pagefind-ui__result {
+    margin-top: 2rem;
+  }
+
+  li::before {
+      content: '';
+      margin-right: 0;
+    }
+}

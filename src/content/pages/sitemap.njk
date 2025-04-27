@@ -1,0 +1,53 @@
+---
+layout: base
+permalink: '/sitemap/'
+title: Our Sitemap
+description: "Using our sitemap you can find your way around our website when the page you are looking for can't be found."
+keywords:
+  - Sitemap
+  - Links
+  - Pages
+pageType: sitemap
+bkgdimage: /assets/images/assembled_components.jpg
+---
+
+<section class="sitemap--list | s--wrapper" data-pagefind-ignore>
+  <h1>{{ title }}</h1>
+  <h2>Links to our Primary Pages</h2>
+    <p>We provide a sitemap so that you can find any page on our website by clicking on the relevant link, you may need this if your have been sent or mistyped a page url, good luck.</p>
+    {%- if navigation.firstnav -%}
+    <ul role="list">
+      <li aria-label="Our primary website pages" class="is--bold">Primary Pages</li>
+    {%- for item in navigation.firstnav -%}
+      {% set externalAttribute = '' %}
+      {% set currentAttribute = '' %}
+      {%- if item.external -%}
+        {% set externalAttribute = ' rel="external"' %}
+      {%- endif -%}
+      {%- if page.url == item.url -%}
+        {% set currentAttribute = ' aria-current="page"' %}
+      {%- endif -%}
+      <li><a href="{{ item.url | lowercase }}" {{ externalAttribute | safe }} {{ currentAttribute | safe }}>{{ item.text }}</a></li>
+    {%- endfor -%}
+    </ul >
+    {%- endif -%}
+    <h3>Links to our Secondary Pages</h3>
+    {%- if navigation.secondnav %}
+    <ul role="list">
+      <li aria-label="Our secondary website pages" class="is--bold">Secondary Pages</li>
+    {%- for item in navigation.secondnav -%}
+      {% set externalAttribute = '' %}
+      {% set currentAttribute = '' %}
+      {%- if item.external -%}
+        {% set externalAttribute = ' rel="external"' %}
+      {%- endif -%}
+      {%- if page.url == item.url -%}
+        {% set currentAttribute = ' aria-current="page"' %}
+      {%- endif -%}
+      <li><a href="{{ item.url | lowercase }}" {{ externalAttribute | safe }} {{ currentAttribute | safe }}>{{ item.text }}</a></li>
+    {%- endfor -%}
+    <li><a aria-label="Our successful form submission page" href="/success/">Success</a></li>
+    </ul >
+    {%- endif -%}
+</ul>
+</article>

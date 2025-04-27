@@ -1,0 +1,91 @@
+label {
+  display: block;
+  font-size: var(--small);
+  margin-bottom: 0.3em;
+  opacity: 0.9;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+input[type='password'],
+input[type='number'],
+input[type='search'],
+input[type='textarea'],
+select,
+textarea {
+  appearance: none;
+  background-color: var(--pale-50);
+  border: var(--bor-width) solid transparent;
+  border-radius: var(--bor-rad);
+  font-family: inherit;
+  font-size: var(--paragraph);
+  height: auto;
+  margin-bottom: 1rem;
+  margin-left: 0;
+  outline: none;
+  padding: 1ch 2ch;
+  width: 300px;
+
+  &:focus {
+    border: var(--bor-width) solid var(--pri-500);
+  }
+
+  &.complete--width {
+    width: 100%;
+  }
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: var(--accent-color);
+  width: 30px;
+  height: 30px;
+}
+
+input[type='submit'] {
+  appearance: none;
+  background-color: var(--pri-500);
+  border: var(--bor-width) solid transparent;
+  border-radius: var(--bor-rad);
+  color: var(--wh-color);
+  font-family: inherit;
+  font-size: var(--paragraph);
+  height: auto;
+  margin-bottom: 1rem;
+  margin-left: 0;
+  outline: none;
+  padding: 1ch 2ch;
+  width: 300px;
+
+  &:focus {
+    border: var(--bor-width) solid var(--pri-500);
+    font-style: italic;
+  }
+
+  &.complete--width {
+    width: 100%;
+  }
+}
+
+textarea {
+  height: 12rem;
+  overflow: hidden;
+
+  &.complete--width {
+    width: 100%;
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:active,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:hover {
+  -webkit-text-fill-color: var(--pri-500);
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+form {
+  margin-bottom: 0;
+  padding: 0;
+}

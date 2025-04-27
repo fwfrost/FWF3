@@ -1,0 +1,48 @@
+.paging {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  padding: 0;
+
+  nav.page--navigation {
+    line-height: 1;
+    margin: 0;
+
+    ul {
+      display: flex;
+      flex-flow: row wrap;
+    }
+
+    li {
+      padding: 0 0.3rem;
+    }
+
+    a {
+      background: var(--pri-500);
+      border-radius: var(--bor-rad);
+      color: var(--wh-color);
+      line-height: 1;
+      margin: 0;
+      padding: 0.3rem 0.6rem;
+    }
+  }
+}
+
+.pagination {
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+
+  a {
+    background: var(--pri-500);
+    border-radius: var(--bor-rad);
+    color: var(--wh-color);
+    margin: 0;
+    padding: 0.6rem;
+
+    .icon {
+      margin-right: 0;
+    }
+  }
+}

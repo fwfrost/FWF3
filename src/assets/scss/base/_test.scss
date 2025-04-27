@@ -1,0 +1,85 @@
+/* -- Forms --*/
+label:not(:has(:is(input,output,textarea,select))):not([for]) {
+  outline: var(--error-outline);
+  --error-unassociated-label: 'The <label> neither uses the `for` attribute nor wraps an applicable form element'
+}
+
+input:not(form input) {
+  outline: var(--warning-outline);
+  --error-input-orphan: 'The input is outside a <form> element. Users may benefit from <form> semantics and behaviors.'
+}
+
+/* -- Links --*/
+a[href^="javascript"] {
+  outline: var(--error-outline);
+  --error-javascript-href: 'The href does not appear to include a location. Did you mean to use a <button>?';
+}
+
+a[disabled] {
+  outline: var(--error-outline);
+  --error-anchor-disabled: 'The disabled property is not valid on anchors (links). Did you mean to use a <button>?';
+}
+
+/* -- Figures --*/
+@layer warnings {
+
+  figure[aria-label]:not(:has(figcaption)) {
+    outline: var(--warning-outline);
+    --warning-figure-label-not-visible: 'The labeling method used is not visible and only available to assistive software';
+  }
+
+  figure[aria-label] figcaption {
+    outline: var(--warning-outline);
+    --warning-overridden-figcaption: 'The figure has a figcaption that is overridden by an ARIA label';
+  }
+
+}
+
+@layer errors {
+
+  figcaption:not(figure > figcaption) {
+    outline: var(--error-outline);
+    --error-figcaption-not-child: 'The figcaption is not a direct child of a figure';
+  }
+
+  figcaption:empty {
+    padding: 0.5ex; /* give it some purchase */
+    outline: var(--error-outline);
+    --error-figcaption-empty: 'The figcaption is empty';
+  }
+
+  figure:not(:is([aria-label], [aria-labelledby])):not(:has(figcaption)) {
+    outline: var(--error-outline);
+    --error-no-figure-label: 'The figure is not labeled by any applicable method';
+  }
+
+  figure > figcaption ~ figcaption {
+    outline: var(--error-outline);
+    --error-multiple-figcaptions: 'There are two figcaptions for one figure';
+  }
+
+}
+
+/* -- Navigations --*/
+ol[class*="breadcrumb"]:not(:is(nav[aria-label], nav[aria-labelledby]) ol) {
+  outline: var(--error-outline);
+  --error-undiscoverable-breadcrumbs: 'It looks like you have provided breadcrumb navigation outside a labeled `<nav>` landmark';
+}
+
+/* -- Body --*/
+body :not(:is(header,nav,main,aside,footer)):not(:is(header,nav,main,aside,footer) *):not(.skip-link) {
+  outline: var(--error-outline);
+  --error-content-outside-landmark: 'You have some content that is not inside a landmark (header, nav, main, aside, or footer)';
+}
+
+/* -- Bloat --*/
+:is(div > div > div > div > *) {
+  outline: var(--warning-outline);
+  --warning-divitis: 'There’s a whole lot of nesting going on here. Is it needed to achieve the layout? (it is not)';
+}
+
+/* -- Header --*/
+header nav:has(ul > ul) {
+  outline: var(--warning-outline);
+  --warning-nested-navigation: 'You appear to be using tiered/nested navigation in your header. This can be difficult to traverse. Index pages with tables of content are preferable.';
+}

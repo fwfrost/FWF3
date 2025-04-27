@@ -1,0 +1,25 @@
+---
+layout: base
+permalink: /vacancies/
+title: Job Vacancies
+description: "F W Frost Engineers Ltd has from time to time vacancies for all trades and skills which are posted on the vacancies page."
+keywords: ['Vacancies at FW Frost Engineers', Job Positions at FW Frost Engineers', 'Vacancies', 'CV', 'Machinist Job In Norfolk', 'Welder Job In Norfolk', 'Fabricator Job In Norfolk']
+bkgdimage: /assets/images/stainless_steel_machined_part.jpg
+---
+
+
+<section class="m--wrapper">
+  <h1>{{ title }}</h1>
+
+  {%- if collections.vacancies.length > 0 -%}
+  {%- for item in collections.vacancies | sort(false, false, 'data.title') -%}
+    <div class="block">
+      <h2>{{ item.data.title }}</h2>
+      {{ item.content | safe }}
+    </div>
+  {%- endfor -%}
+{%- else -%}
+  <p>Sorry, there are no vacancies at FW Frost at the moment, but we are always interested in receiving CVs.</p>
+{%- endif -%}
+
+</section>

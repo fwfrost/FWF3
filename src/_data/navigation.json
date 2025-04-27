@@ -1,0 +1,78 @@
+{
+  "firstnav": [
+    {
+      "text": "Home",
+      "url": "/",
+      "aria": "Head to the FW Frost's homepage.",
+      "external": false
+    },
+    {
+      "text": "About",
+      "url": "/about-us/",
+      "aria": "Learn a bit about FW Frost's History.",
+      "external": false
+    },
+    {
+      "text": "Fabrication",
+      "url": "/fabrication/",
+      "aria": "Learn about the Fabrication capabilities at FW Frost's.",
+      "external": false
+    },
+    {
+      "text": "Machining",
+      "url": "/machining/",
+      "aria": "Learn about the Machining capabilities at FW Frost's.",
+      "external": false
+    },
+    {
+      "text": "News",
+      "url": "/news/",
+      "aria": "FW Frost's latest posts.",
+      "external": false
+    },
+    {
+      "text": "Contact Us",
+      "url": "/contact-us/",
+      "aria": "Contact the team at FW Frost's.",
+      "external": false
+    },
+    {
+      "text": "Vacancies",
+      "url": "/vacancies/",
+      "aria": "FW Frost's current vacancies.",
+      "external": false
+    },
+    {
+      "text": "Search",
+      "url": "/search/",
+      "aria": "Search the FW Frost's website.",
+      "external": false
+    }
+  ],
+  "secondnav": [
+    {
+      "text": "Cookies Policy",
+      "url": "/cookies-policy/",
+      "aria": "FW Frost's cookies policy.",
+      "external": false
+    },
+    {
+      "text": "Privacy Policy",
+      "url": "/privacy-policy/",
+      "aria": "FW Frost's privacy policy.",
+      "external": false
+    },
+    {
+      "text": "Sitemap",
+      "url": "/sitemap/",
+      "aria": "FW Frost's website sitemap.",
+      "external": false
+    },
+    {
+      "text": "Terms Of Use",
+      "url": "/terms-of-use/",
+      "aria": "FW Frost's terms of use statement.",
+      "external": false
+    }
+  ]
+}

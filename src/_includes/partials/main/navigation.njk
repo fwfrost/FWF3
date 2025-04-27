@@ -1,0 +1,25 @@
+{% set currentUrl = page.url %}
+{%- if navigation.firstnav -%}
+<nav class="navbar" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a href="/"><img src="/assets/images/fw-frost-engineers-logo.png" alt="{{ site.name }} logo"></a>
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div id="navbar" class="navbar-menu">
+    <div class="navbar-start">
+      {%- for item in navigation.firstnav -%}
+      {% set externalAttribute = '' %}
+      {% set currentAttribute = '' %}
+      {%- if item.external -%}{% set externalAttribute = ' rel="external"' %}{%- endif -%}
+      {%- if page.url == item.url -%}{% set currentAttribute = ' aria-current="page"' %}{%- endif -%}
+      <a class="navbar-item" aria-label="{{ item.aria }}" href="{{ item.url }}"{{ externalAttribute | safe }}{{ currentAttribute | safe }}>{{ item.text }}</a>{%- endfor -%}
+      <a class="navbar-item" href="tel:{{ site.telephone }}" aria-label="email {{ site.name }} at {{ site.telephone }}">{% icon "fas:phone" %}{{ site.telephoneDisplay }}</a>
+      <a class="navbar-item" href="tel:{{ site.mobile }}" aria-label="email {{ site.name }} at {{ site.mobile }}">{% icon "fas:mobile-screen" %}{{ site.mobileDisplay }}</a>
+    </div>
+  </div>
+</nav>
+{%- endif -%}

@@ -1,0 +1,27 @@
+.scrollup {
+  background: var(--pri-500);
+  border-radius: var(--bor-rad);
+  bottom: 0;
+  color: var(--wh-color);
+  font-size: 1.5rem;
+  line-height: 1;
+  opacity: 1;
+  padding: .25rem;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  z-index: 9999;
+
+  &:hover {
+    background: var(--pri-500);
+    border-radius: 0;
+    transform: translateY(-0.25em);
+  }
+
+  svg:has(use[href*="#fa"]),
+  svg:has(use[xlink\:href*="#fa"]) {
+    margin-right: 0;
+  }
+}

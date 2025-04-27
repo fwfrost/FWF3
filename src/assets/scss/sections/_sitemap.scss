@@ -1,0 +1,23 @@
+.sitemap--list ul,
+.sitemap--sublist ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+
+  [aria-current='page'] {
+    background-color: var(--pri-500);
+    color: var(--f-color-inv);
+    font-style: italic;
+    font-weight: 600;
+  }
+
+  a {
+    padding: .4rem;
+  }
+}
+
+.sitemap--list li::before,
+.sitemap--sublist li::before {
+  content: '';
+  margin-right: .4rem;
+}

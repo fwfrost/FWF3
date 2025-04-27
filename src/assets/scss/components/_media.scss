@@ -1,0 +1,52 @@
+audio,
+iframe,
+img,
+object,
+picture,
+video {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+picture {
+  border-radius: var(--bor-rad);
+}
+
+img {
+  border-radius: var(--bor-rad);
+  font-family: var(--b-font);
+  font-size: 14px;
+  line-height: inherit;
+  margin-bottom: 1rem;
+  position: relative;
+  text-align: center;
+
+  &--left {
+    float: left;
+    margin-bottom: 1rem;
+    margin-right: 1em;
+    width: 250px;
+  }
+
+  &--right {
+    float: right;
+    margin-bottom: 1rem;
+    margin-left: 1em;
+    width: 250px;
+  }
+}
+
+img::before {
+  content: "We're sorry, the image below is broken";
+  display: block;
+  margin-bottom: 10px;
+}
+
+img::after {
+  content: '(url: "attr(src) ")';
+  display: block;
+  font-size: 0.75em;
+  margin-top: 6px;
+}

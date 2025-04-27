@@ -1,0 +1,23 @@
+---
+layout: base
+pageType: blog
+---
+
+<article class="n--wrapper | post--block">
+  <h1>{{ title }}</h1>
+  <img src="{{ image }}" alt="{{ alt }}" >
+  <p class="is--meta">Author: {{ site.authorName }}</p>
+  <p class="is--meta">Published: {% if date %}<time datetime="{{ date | dateFeed }}">{{ date | dateToFormat }}</time>
+    {{ post.date }}
+  </time></p>
+  {% endif %}
+  </ul>
+  {{ content | safe }}
+</article>
+
+<section class="n--wrapper prev--next">
+  {% set previousPost = collections.releasedPosts | getPreviousCollectionItem(page) %}
+  {% set nextPost = collections.releasedPosts | getNextCollectionItem(page) %}
+  <p class="is--meta">{% if previousPost %}Previous Article: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>{% endif %}</p>
+  <p class="is--meta">{% if nextPost %}Next Article: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>{% endif %}</p>
+</section>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}" dir="{{ site.dir }}">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  {%- include "partials/main/head-meta.njk" -%}
+</head>
+
+<body id="page-top">
+  {%- include "partials/main/cookie-banner.njk" -%}
+  <a class="skip-link screen-reader-text" aria-label="Skip to the main page content" href="#main">Skip to content</a>
+  {%- include "partials/main/theme-switcher.njk" -%}
+  {%- include "partials/main/navigation.njk" -%}
+  {%- include "partials/main/header.njk" -%}
+
+  <main id="main" class="l--wrapper" data-pagefind-body>
+    {{ content | safe }}
+  </main>
+
+  {%- include "partials/main/footer.njk" -%}
+
+<script src="{{ '/assets/js/main.js' | url | cacheBust  }}"></script>
+<script src="{{ '/assets/js/vendor/cookie-notification.js' | url | cacheBust }}"></script>
+<script>
+  if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/serviceworker.js')
+  }
+</script>
+<script>
+  GdprConsent.attachBanner(document.getElementById('cookie-banner'), {
+    cookieName: 'test_gdpr',
+    categories: {
+      analytics: function () {
+        console.info('Dropped analytics cookies')
+      },
+      necessary: function () {
+        console.info('Dropped necessary cookies')
+      }
+    },
+    choices: {
+      necessary: {
+        label: 'Necessary Things',
+        description: 'Super important',
+        value: true
+      },
+      analytics: false
+    }
+  })
+</script>
+{%- if pageType === 'gallery' -%}
+<script type="text/javascript">
+  const lightbox = GLightbox({ touchNavigation: true });
+</script>
+{%- endif -%}
+{% getBundle "fontawesome" %}
+</body>
+</html>

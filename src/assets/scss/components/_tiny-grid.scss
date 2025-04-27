@@ -1,0 +1,133 @@
+@use 'sass:math';
+
+@mixin tiny-grid {
+  // Settings
+  $grid-columns: 12 !default;
+  $grid-gutter: 20px !default;
+  $grid-container-max-width: 1470px !default;
+  $grid-container-gutter: 30px !default;
+  $grid-target-total-width: 99.8% !default; // Keeps total width slightly under 100%
+
+  $grid-breakpoints: (
+    sm: 480px,
+    md: 768px,
+    lg: 1024px,
+    xl: 1366px
+  ) !default;
+
+  // Container Elements
+  %container-base {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-left: $grid-container-gutter;
+    padding-right: $grid-container-gutter;
+    box-sizing: border-box;
+  }
+
+  .container {
+    @extend %container-base;
+    max-width: $grid-container-max-width;
+  }
+
+  .container-fluid {
+    @extend %container-base;
+  }
+
+  // Row Base Styles
+  .row {
+    margin-left: math.div($grid-gutter, -2);
+    margin-right: math.div($grid-gutter, -2);
+    box-sizing: border-box;
+    font-size: 0; // Collapse whitespace between inline-block columns
+
+    // Mobile column bottom margin (excluding last)
+    > [class^="col-"]:not(:last-child),
+    > [class*=" col-"]:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  // Row-to-Row Spacing (Mobile First)
+  // Apply margin-bottom to all rows EXCEPT the last one within its parent.
+  // This creates space AFTER the row, effectively BETWEEN rows.
+  .row:not(:last-child) {
+    margin-bottom: 1rem; // Default mobile margin BETWEEN rows
+  }
+
+
+  // Column Base Styles
+  [class^="col-"],
+  [class*=" col-"] {
+    display: inline-block;
+    vertical-align: top; // Still needed for inline-block alignment
+    width: 100%;
+    min-height: 1px;
+    padding-left: math.div($grid-gutter, 2);
+    padding-right: math.div($grid-gutter, 2);
+    box-sizing: border-box;
+    // ADD font-size reset here:
+    // 'initial' lets it inherit normally from the body/html ancestor,
+    // effectively undoing the font-size: 0 from the parent row.
+    // Use '1rem' if you specifically want columns to establish a 1rem base.
+    font-size: initial;
+  }
+
+  // Create non-breakpoint specific columns and column offsets
+  @for $i from 1 through $grid-columns {
+    .col-#{$i} {
+      width: (math.div($grid-target-total-width, $grid-columns) * $i);
+    }
+    .col-offset-#{$i} {
+      margin-left: (math.div($grid-target-total-width, $grid-columns) * $i);
+    }
+  }
+
+  // Create breakpoint specific columns, offsets, and spacing overrides
+  @each $breakpoint-name, $breakpoint-width in $grid-breakpoints {
+
+    // Create media query for each breakpoint
+    @media (min-width: $breakpoint-width) {
+
+      // Reset column bottom margin from SM upwards
+      @if $breakpoint-name == sm {
+        .row > [class^="col-"]:not(:last-child),
+        .row > [class*=" col-"]:not(:last-child) {
+          margin-bottom: 0; // Remove bottom margin on columns
+        }
+      }
+
+      // Adjust row-to-row spacing based on breakpoint
+      @if $breakpoint-name == sm {
+        .row:not(:last-child) { // Targets all rows except last at SM+
+          margin-bottom: 2rem;
+        }
+      }
+      @if $breakpoint-name == md {
+         .row:not(:last-child) { // Targets all rows except last at MD+
+          margin-bottom: 3rem;
+        }
+      }
+
+      // --- Original breakpoint column/offset generation ---
+
+      // Add offset-0 to reset offset in specific breakpoints
+      .col-#{$breakpoint-name}-offset-0 {
+        margin-left: 0;
+      }
+
+      // Create columns and column offsets for each size in this breakpoint
+      @for $i from 1 through $grid-columns {
+        .col-#{$breakpoint-name}-#{$i} {
+          width: (math.div($grid-target-total-width, $grid-columns) * $i);
+        }
+        .col-#{$breakpoint-name}-offset-#{$i} {
+          margin-left: (math.div($grid-target-total-width, $grid-columns) * $i);
+        }
+      }
+    }
+  }
+}
+
+// Include the mixin to generate the CSS
+@include tiny-grid;

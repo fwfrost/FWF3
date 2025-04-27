@@ -1,0 +1,126 @@
+hr {
+  border: 0;
+  border-bottom: var(--bor-width) solid var(--gray-400);
+  margin: 1em 20%;
+}
+
+.visually-hidden:not(:focus) {
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.is--hidden {
+  display: none;
+}
+
+.block {
+  background-color: var(--bkgd-color);
+  border: var(--bor);
+  border-radius: var(--bor-rad);
+  box-shadow: var(--shadow-md);
+  color: var(--f-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  text-align: left;
+
+  h2, h3 {
+    margin-top: 0;
+  }
+}
+
+.flow > * + * {
+  margin-top: 1em;
+}
+
+.s--wrapper {
+  margin: 0 auto;
+  max-width: var(--s-width, 50vw);
+  padding: 2rem 1rem;
+  width: 100%;
+}
+
+.m--wrapper {
+  margin: 0 auto;
+  max-width: var(--m-width, 60vw);
+  padding: 2rem 1rem;
+  width: 100%;
+}
+
+.l--wrapper {
+  margin: 0 auto;
+  max-width: var(--l-width, 70vw);
+  padding: 2rem 1rem;
+  width: 100%;
+}
+
+.t--centered {
+  text-align: center;
+}
+
+.cluster {
+  --gap: var(--space-unit);
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap, --space-unit);
+  justify-content: flex-start;
+}
+
+.repel {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-lg\.5);
+  justify-content: space-between;
+}
+
+.repel[data-nowrap] {
+  flex-wrap: nowrap;
+}
+
+.switcher {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.switcher > * {
+  flex-basis: calc((32rem - 100%) * 999);
+  flex-grow: 1;
+}
+
+.switcher > :nth-last-child(n + 3),
+.switcher > :nth-last-child(n + 3) ~ * {
+  flex-basis: 100%;
+}
+
+.full--width {
+  background-color: var(--warm-gray-100);
+  left: 50%;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  position: relative;
+  transform: translateX(-50%);
+  width: 100vw;
+}
+
+.complete--width {
+  width: 100%;
+}
+
+@include respond-to(sm) {
+  .full--width {
+    padding: 3rem 15vw;
+  }
+}
+
+@include respond-to(md) {
+  .full--width {
+    padding: 3rem 20vw;
+  }
+}

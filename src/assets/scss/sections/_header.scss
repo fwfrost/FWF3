@@ -1,0 +1,62 @@
+header {
+  background-color: var(--pri-500);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  position: relative;
+  width: 100%;
+
+  .inner--header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(39, 62, 84, 0.7);
+    display: grid;
+    place-content: center;
+    z-index: 1;
+    padding: 2rem;
+    text-align: center;
+
+    a {
+      margin: 0 auto;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .heading {
+      color: var(--wh-color);
+      font-family: var(--h-font);
+      font-size: var(--header-text);
+      font-weight: var(--h-font-wght);
+      line-height: 1.05;
+      margin-bottom: 0;
+      padding: 0;
+    }
+
+    .sub--heading {
+      color: var(--f-color-inv);
+      font-family: var(--h-font);
+      font-size: var(--heading-h4);
+      font-style: italic;
+      font-weight: var(--h-font-wght);
+      line-height: 1.1;
+      margin-top: 1rem;
+      padding: 0;
+    }
+  }
+}
+
+@include respond-to(sm) {
+  header {
+    height: 400px;
+  }
+}
+
+@include respond-to(md) {
+  header {
+    height: 500px;
+  }
+}
