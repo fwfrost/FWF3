@@ -11,7 +11,7 @@
       Report-To = '''{
         "group":"default",
         "max_age":31536000,
-        "endpoints":[{"url":"https://my3.co.uk/a/d/g"}],
+        "endpoints":[{"url":"https://fwfrost-engineers.co.uk/a/d/g"}],
         "include_subdomains":true
       }'''
 
@@ -35,27 +35,3 @@
     from = "*"
     to = "/404/"
     status = 404
-
-[[plugins]]
-package = "netlify-plugin-cache"
-
-  [plugins.inputs]
-  paths = [
-    "_site/socialImages",
-    ".cache"
-  ]
-
-[[plugins]]
-  package = "netlify-plugin-inline-critical-css"
-
-  [plugins.inputs]
-    fileFilter = ["*.html"]
-
-    directoryFilter = ["!node_modules"]
-
-    extract = false
-
-    dimensions = [
-      { width = 415, height = 896 },
-      { width = 1920, height = 1081 }
-    ]
