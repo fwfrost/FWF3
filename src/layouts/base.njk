@@ -13,9 +13,13 @@
   <a class="skip-link screen-reader-text" aria-label="Skip to the main page content" href="#main">Skip to content</a>
   {%- include "partials/main/theme-switcher.njk" -%}
   {%- include "partials/main/navigation.njk" -%}
+  {%- if pageType === 'home' -%}
+  {%- include "partials/main/frontpage-header.njk" -%}
+  {%- else -%}
   {%- include "partials/main/header.njk" -%}
+  {%- endif -%}
 
-  <main id="main" class="l--wrapper" data-pagefind-body>
+  <main id="main" data-pagefind-body>
     {{ content | safe }}
   </main>
 

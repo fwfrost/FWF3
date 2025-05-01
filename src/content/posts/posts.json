@@ -1,0 +1,13 @@
+{
+  "ogType": "article",
+  "jsonldType": "post",
+  "permalink": "/news/{{ title | slug }}/",
+  "templateEngineOverride": "njk,md",
+  "draft": "false",
+  "layout": "post",
+  "bkgdimage": "/assets/images/machined_and_assembled_components.jpg",
+  "sitemap": {
+      "changefreq": "weekly",
+      "priority": "0.75"
+    }
+}

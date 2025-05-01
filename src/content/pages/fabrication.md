@@ -4,7 +4,7 @@ permalink: /fabrication/
 title: Fabrication
 description: "F W Frost Engineers Ltd have the ability and skills to produce large and small fabrications and sheet metal parts in Mild and Stainless Steel or Aluminium."
 keywords: ['Fabrication in Norfolk', 'Precision Fabricators in Norfolk', 'Precision Fabrication in Norfolk', 'Skilled Fabrication in Norfolk','Skilled Fabricators in Norfolk', 'Large Fabrications in Norfolk', 'Mild Steel Fabrications in Norfolk', 'Aluminium Fabrications in Norfolk' ]
-bkgdimage: /assets/images/machined-stainless-plate.jpg
+bkgdimage: /assets/images/galvanised_access_cover.jpg
 ---
 
 ## Fabrication
@@ -19,6 +19,6 @@ We can provide coded welding in a variety of materials to suit customers require
 
 F W Frost strive to work closely with our customers and build relationships based on quality workmanship and on time deliveries.
 
-Please see our capacity list, a link is at the bottom of every page.
+If you have a need for Fabrication work, large or small or sheet metal work, why not give us a call on {% phone "01603867301", "01603 867301", "FW Frost Engineers" %} or {% mobile "07885170163", "07885170163", "FW Frost Engineers" %} ? We are always ready to listen.
 
-Feel free to [contact us](/contact-us/) for more information.
+Please see our capacity list, a link is at the bottom of every page.

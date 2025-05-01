@@ -1,6 +1,6 @@
 :root {
-  --blue-c: 0.0545;
-  --blue-h: 260;
+  --blue-c: 0.087;
+  --blue-h: 262.93;
   --indigo-c: 0.3;
   --indigo-h: 275;
   --purple-c: 0.2;
@@ -17,12 +17,12 @@
   --green-h: 140;
   --teal-c: 0.2;
   --teal-h: 160;
-  --cyan-c: 0.2;
-  --cyan-h: 210;
+  --cyan-c: 0.1123;
+  --cyan-h: 227.43;
   --pri-hue: var(--blue-h);
   --pri-chroma: var(--blue-c);
-  --sec-hue: var(--indigo-h);
-  --sec-chroma: var(--indigo-c);
+  --sec-hue: var(--cyan-h);
+  --sec-chroma: var(--cyan-c);
 	--info-hue: var(--blue-h);
 	--success-hue: var(--green-h);
 	--warning-hue: var(--orange-h);
@@ -34,7 +34,7 @@
   --a: 100%;
 
   --bor-color: var(--gray-100);
-  --bor-rad: 6px;
+  --bor-rad: 0;
   --bor-width: 2px;
 
   --h-font: 'Tajawal', serif;

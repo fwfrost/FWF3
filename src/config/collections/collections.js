@@ -61,7 +61,7 @@ export default {
   // 	------ Returns a collection of Posts -------------
   releasedPosts: collection => {
     return collection
-      .getFilteredByGlob('./src/content/posts/**/*.md')
+      .getFilteredByGlob('./src/content/posts/*.md')
       .reverse()
       .filter(hideFutureItems);
   },
@@ -81,6 +81,51 @@ export default {
   // 	------ Returns a collection of machining images -------
   machineImages: collection => {
     return collection.getFilteredByTags('machineImages');
-  }
+  },
+
+  // 	------ Create blog categories collection -------
+  categoryList: collection => {
+    let allCategories = getAllKeyValues(
+      collection.getFilteredByGlob('./src/content/posts/**/*.md'),
+      'categories'
+    );
+    let categories = allCategories.map(category => ({
+      title: category,
+      slug: strToSlug(category)
+    }));
+    return categories.sort();
+  },
+
+  // 	------ Create blog tags collection -------
+  tagList: collection => {
+    let tagsSet = {};
+
+    collection.getAll().forEach((item) => {
+      if (!item.data.tags) return;
+      item.data.tags
+        .filter(
+          (tag) =>
+            ![
+              "posts",
+              "all",
+              "machineImages",
+              "fabImages",
+              "tagList",
+              "categorylist",
+              "featuredPosts",
+              "releasedPosts",
+            ].includes(tag)
+        )
+        .forEach((tag) => {
+          if (!tagsSet[tag]) {
+            tagsSet[tag] = [];
+          }
+          tagsSet[tag].push(item);
+        });
+    });
+
+    // Convert to array and sort alphabetically
+    return Object.entries(tagsSet).sort((a, b) => a[0].localeCompare(b[0]));
+  },
 };
 

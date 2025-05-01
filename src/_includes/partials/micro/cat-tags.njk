@@ -1,0 +1,13 @@
+<p class="is--bold">Categories:-</p>
+<ul class="inline--list">
+  {%- for category in collections.categoryList -%}
+  <li><a href="/categories/{{ category.slug }}/">{{ category.title | capitalize }}</a></li>
+  {%- endfor -%}
+</ul>
+<p class="is--bold">Tags:-</p>
+<ul class="inline--list">
+  {%- for tag, val in collections.tagList -%}
+  {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+  <li><a href="{{ tagUrl | url | lowercase }}">{{ tag }}</a></li>
+  {%- endfor -%}
+</ul>

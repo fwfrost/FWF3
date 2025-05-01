@@ -1,7 +1,9 @@
 import {execSync} from 'child_process';
 import esbuild from 'esbuild';
 import site from './site.config.js';
+import collections from './src/config/collections/collections.js';
 import filters from './src/config/filters/filters.js';
+import shortcodes from './src/config/shortcodes/shortcodes.js';
 import htmlmin from 'html-minifier-terser';
 
 // --------------- Plugins --------------------------
@@ -44,6 +46,16 @@ export default async function (eleventyConfig) {
   eleventyConfig.addWatchTarget('./sass/');
   eleventyConfig.addWatchTarget('./js/');
 
+  // ---------------- Collections -----------------------
+  Object.keys(collections).forEach(collectionName => {
+    eleventyConfig.addCollection(collectionName, collections[collectionName]);
+  });
+
+  // ---------------- Shortcodes -----------------------
+  Object.keys(shortcodes).forEach((shortcodeName) => {
+    eleventyConfig.addShortcode(shortcodeName, shortcodes[shortcodeName])
+  });
+
   // ---------------- Filters -----------------------
   Object.keys(filters).forEach(filterName => {
     eleventyConfig.addFilter(filterName, filters[filterName]);
@@ -52,6 +64,7 @@ export default async function (eleventyConfig) {
   // 	--------     --- Layouts ------      -------------
   eleventyConfig.addLayoutAlias('base', 'base.njk');
   eleventyConfig.addLayoutAlias('default', 'default.njk');
+  eleventyConfig.addLayoutAlias('contact', 'contact.njk');
   eleventyConfig.addLayoutAlias('fabrication', 'fabrication.njk');
   eleventyConfig.addLayoutAlias('machining', 'machining.njk');
   eleventyConfig.addLayoutAlias('post', 'post.njk');

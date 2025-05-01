@@ -13,6 +13,7 @@
 @import 'base/typography';
 
 @import 'components/buttons';
+@import 'components/blocks';
 @import 'components/classes';
 @import 'components/forms';
 @import 'components/icons';
@@ -25,10 +26,12 @@
 @import 'sections/scrollbar';
 @import 'sections/theme-switcher';
 @import 'sections/accessibility';
+@import 'sections/blog';
 @import 'sections/cookie';
 @import 'sections/gallery';
 @import 'sections/header';
 @import 'sections/nav';
 @import 'sections/main';
 @import 'sections/footer';
+@import 'sections/pagination';
 @import 'sections/scrollup';

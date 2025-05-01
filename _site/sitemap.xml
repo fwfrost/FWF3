@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://www.fwfrost-engineers.co.uk/content/posts/forwards-to-the-weekend/</loc>
-        <lastmod>2020-08-10T15:29:00.000Z</lastmod></url>
+        <loc>https://www.fwfrost-engineers.co.uk/news/new-axiom-too-1200-cmm/</loc>
+        <lastmod>2024-03-02T15:29:00.000Z</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+    <url>
+        <loc>https://www.fwfrost-engineers.co.uk/news/machining-meehanite-wa-castings/</loc>
+        <lastmod>2024-09-06T15:29:00.000Z</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
     <url>
         <loc>https://www.fwfrost-engineers.co.uk/about-us/</loc>
         <lastmod>2025-04-24T20:14:10.258Z</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
@@ -33,6 +36,9 @@
     <url>
         <loc>https://www.fwfrost-engineers.co.uk/terms-of-use/</loc>
         <lastmod>2025-04-24T20:14:10.308Z</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url>
+        <loc>https://www.fwfrost-engineers.co.uk/news/</loc>
+        <lastmod>2025-04-24T20:33:04.744Z</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
     <url>
         <loc>https://www.fwfrost-engineers.co.uk/privacy-policy/</loc>
         <lastmod>2025-04-24T20:39:40.265Z</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
@@ -101,4 +107,10 @@
         <lastmod>2025-04-27T20:00:10.834Z</lastmod></url>
     <url>
         <loc>https://www.fwfrost-engineers.co.uk/content/fab-images/bespoke-trolley-fabrication/</loc>
-        <lastmod>2025-04-27T20:01:05.135Z</lastmod></url></urlset>
+        <lastmod>2025-04-27T20:01:05.135Z</lastmod></url>
+    <url>
+        <loc>https://www.fwfrost-engineers.co.uk/categories/inspection/</loc>
+        <lastmod>2025-04-28T06:34:13.148Z</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+    <url>
+        <loc>https://www.fwfrost-engineers.co.uk/tags/inspection/</loc>
+        <lastmod>2025-04-28T06:34:13.210Z</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url></urlset>

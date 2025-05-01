@@ -1,6 +1,6 @@
 button,
 .button {
-  background: var(--pri-500);
+  background: var(--pri-600);
   border: 3px solid transparent;
   border-radius: var(--bor-rad);
   color: var(--f-color-inv);
@@ -12,7 +12,6 @@ button,
   padding: 1ch 2ch;
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
   touch-action: manipulation;
   transition: all var(--dur) var(--trans);
   user-select: none;
@@ -20,13 +19,13 @@ button,
   &:focus,
   &:hover {
     background: var(--sec-500);
-    border: 3px solid var(--pri-500);
+    border: 3px solid var(--pri-800);
     border-radius: 0;
   }
 }
 
 .button--submit {
-  background: var(--pri-500);
+  background: var(--pri-600);
   border: 3px solid transparent;
   border-radius: var(--bor-rad);
   color: var(--f-color-inv);
@@ -46,7 +45,7 @@ button,
   &:focus,
   &:hover {
     background: var(--sec-500);
-    border: 3px solid var(--pri-500);
+    border: 3px solid var(--pri-800);
     border-radius: 0;
   }
 }

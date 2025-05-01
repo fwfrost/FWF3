@@ -36,6 +36,7 @@
     "@uncenter/eleventy-plugin-toc": "^1.0.3",
     "autoprefixer": "^10.4.20",
     "bulma": "^0.9.4",
+    "common-tags": "^1.8.2",
     "concurrently": "^9.0.1",
     "cross-env": "^7.0.3",
     "del-cli": "^5.1.0",

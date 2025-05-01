@@ -3,21 +3,37 @@ layout: base
 pageType: blog
 ---
 
-<article class="n--wrapper | post--block">
+<article class="m--wrapper | post--block">
   <h1>{{ title }}</h1>
-  <img src="{{ image }}" alt="{{ alt }}" >
-  <p class="is--meta">Author: {{ site.authorName }}</p>
-  <p class="is--meta">Published: {% if date %}<time datetime="{{ date | dateFeed }}">{{ date | dateToFormat }}</time>
-    {{ post.date }}
-  </time></p>
+  <img src="{{ image }}" alt="{{ alt }}">
+  <ul class="inline--list">
+    <li class="is--meta">Author: {{ site.authorName }} - </li>
+    <li class="is--meta">Published:{% if date %} <time datetime="{{ date | dateFeed }}">{{ date | dateToFormat }}</time>
+      {{ post.date }}</time></li>
+  </ul>
   {% endif %}
+  {% if tags %}
+  <p class="visually--hidden" id="tags-desc">Tags that this post has been filed under.</p>
+  <ul class="inline--list" aria-describedby="tags-desc">
+    <li class="is--meta">Tags: </li>
+    {% for tag in tags %}
+    <li class="is--meta"><a href="/tag/{{ tag | slug }}/">{{ tag | title | replace(' ', '') }}</a></li>
+    {% endfor %}
+    {% endif %}
+    <li class="is--meta">Category:</li>
+    {% for category in categories %}
+    <li><a class="is--meta" href="/categories/{{ category | slug }}/">{{ category | title }}</a></li>
+    {% endfor %}
   </ul>
   {{ content | safe }}
+  <a class="button" aria-label="back to the news listing page" href="/news/">{% icon "fas:caret-left" %}All Posts</a>
 </article>
 
-<section class="n--wrapper prev--next">
+<section class="m--wrapper prev--next">
   {% set previousPost = collections.releasedPosts | getPreviousCollectionItem(page) %}
   {% set nextPost = collections.releasedPosts | getNextCollectionItem(page) %}
-  <p class="is--meta">{% if previousPost %}Previous Article: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>{% endif %}</p>
-  <p class="is--meta">{% if nextPost %}Next Article: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>{% endif %}</p>
+  <p class="is--meta">{% if previousPost %}Previous <a href="{{ previousPost.url }}">{{ previousPost.data.title
+      }}</a>{% endif %}</p>
+  <p class="is--meta">{% if nextPost %}Next <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>{% endif
+    %}</p>
 </section>

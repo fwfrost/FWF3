@@ -1,4 +1,5 @@
 import {DateTime} from 'luxon';
+import lodash from 'lodash';
 import pkg from 'lodash';
 
 const {replace, deburr} = pkg;
@@ -147,6 +148,15 @@ export default {
 
   limit: (array, limit) => {
     return array.slice(0, limit);
+  },
+
+  include: function (arr, path, value) {
+    value = lodash.deburr(value).toLowerCase();
+    return arr.filter(item => {
+      let pathValue = lodash.get(item, path);
+      pathValue = lodash.deburr(pathValue).toLowerCase();
+      return pathValue.includes(value);
+    });
   },
 
   stripmarks: value => {

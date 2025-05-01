@@ -10,7 +10,7 @@ export default {
   dir: 'ltr',
   locale: 'en_GB',
   email: 'sales@fwfrost-engineers.co.uk',
-  authorName: 'Robert Frost',
+  authorName: 'F W Frost (Engineers) Ltd',
   slogan: 'Specialist Equipment & Sub Contract Engineering',
   mobile: '07885170163',
   mobileDisplay: '07885170163',

@@ -11,11 +11,19 @@ pageType: blog
 
 
 {% block content %}
-<section class="m--wrapper">
-  <h1>{{ title }}</h1>
+<section class="l--wrapper markdown--block">
+  <aside>
+    {%- include "partials/micro/cat-tags.njk" -%}
+  </aside>
+  <div>
+    <h1>{{ title }}</h1>
     {%- include "partials/micro/post-list.njk" -%}
+    {% if tag %}
+    <a class="button" aria-label="back to the journal listing page" href="/news/">{% icon "fas:caret-left" %}All Posts</a>
+    {% endif %}
     {%- if not tag -%}
     {% include "partials/micro/pagination.njk" %}
     {%- endif -%}
+  </div>
 </section>
 {% endblock %}

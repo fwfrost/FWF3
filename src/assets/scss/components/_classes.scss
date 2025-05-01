@@ -17,24 +17,7 @@ hr {
   display: none;
 }
 
-.block {
-  background-color: var(--bkgd-color);
-  border: var(--bor);
-  border-radius: var(--bor-rad);
-  box-shadow: var(--shadow-md);
-  color: var(--f-color);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 1rem;
-  text-align: left;
-
-  h2, h3 {
-    margin-top: 0;
-  }
-}
-
-.flow > * + * {
+.flow>*+* {
   margin-top: 1em;
 }
 
@@ -63,40 +46,43 @@ hr {
   text-align: center;
 }
 
-.cluster {
-  --gap: var(--space-unit);
-  align-items: center;
+.inline--list {
   display: flex;
-  flex-wrap: wrap;
-  gap: var(--gap, --space-unit);
-  justify-content: flex-start;
+  flex-flow: row wrap;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+
+  li {
+    display: flex;
+    flex-flow: row wrap;
+
+    a {
+      background-color: var(--gray-100);
+      border-radius: var(--bor-rad);
+      color: var(--t-color);
+      font-size: var(--small);
+      font-weight: 400;
+      margin-bottom: 0.5rem;
+      margin-right: 0.5rem;
+      padding: 0.2rem 0.5rem;
+    }
+  }
+
+  li.is--meta {
+    margin-right: 0.3rem;
+  }
+
+  li::before {
+    content: none;
+  }
 }
 
-.repel {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-lg\.5);
-  justify-content: space-between;
+.vertical--spacer {
+  height: 1rem;
 }
 
-.repel[data-nowrap] {
-  flex-wrap: nowrap;
-}
-
-.switcher {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.switcher > * {
-  flex-basis: calc((32rem - 100%) * 999);
-  flex-grow: 1;
-}
-
-.switcher > :nth-last-child(n + 3),
-.switcher > :nth-last-child(n + 3) ~ * {
-  flex-basis: 100%;
+.row {
+  margin-bottom: 1rem;
 }
 
 .full--width {
@@ -114,12 +100,29 @@ hr {
 }
 
 @include respond-to(sm) {
+
+  .row {
+    margin-bottom: 1.5rem;
+  }
+
+  .vertical--spacer {
+    height: 2rem;
+  }
+
   .full--width {
     padding: 3rem 15vw;
   }
 }
 
 @include respond-to(md) {
+  .row {
+    margin-bottom: 2rem;
+  }
+
+  .vertical--spacer {
+    height: 3rem;
+  }
+
   .full--width {
     padding: 3rem 20vw;
   }

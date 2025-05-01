@@ -16,9 +16,18 @@ main {
     &:hover,
     &:focus {
       text-decoration: underline;
-      transform: translateY(-2px);
     }
   }
+
+  svg:has(use[href*="#fa"]),
+svg:has(use[xlink\:href*="#fa"]) {
+  display: inline;
+  color: var(--sec-600);
+  height: 1em;
+  margin-right: .4rem;
+  vertical-align: middle;
+  width: 1em;
+}
 
   section {
     margin: 0 auto;
@@ -60,7 +69,7 @@ main {
 
 @include respond-to(sm) {
   main {
-    padding: 3rem 0;
+    padding: 2rem 0;
 
     .markdown--block {
       grid-template-columns: 35ch 1fr;
@@ -82,8 +91,6 @@ main {
 
 @include respond-to(md) {
   main {
-    padding: 4rem 0;
-
     aside {
       padding-top: 6rem;
     }

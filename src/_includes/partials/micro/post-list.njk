@@ -1,8 +1,8 @@
 {% if postListItems.length %}
 
-<ul class="post--list">
+<div class="post--list">
   {% for item in postListItems %}
-  <li class="post--list--block | flow">
+  <div class="post--list--block">
     <h2>
       <a href="{{ item.url }}" rel="bookmark">{{ item.data.title }}</a>
     </h2>
@@ -11,7 +11,7 @@
     <p class="is--meta">Published: <time datetime="{{ item.date | dateFeed }}">{{ item.date | dateToFormat }}</time></p>
     </div>
     {{ item.content | safe | truncate(300 )}}
-  </li>
+  </div>
   {% endfor %}
-</ul>
+</div>
 {% endif %}

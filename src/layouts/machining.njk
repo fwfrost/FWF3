@@ -2,7 +2,7 @@
 layout: base
 ---
 
-<section>
+<section class="l--wrapper">
   {{ content | safe }}
   <div class="block--grid">
   {%- if collections.machineImages.length > 0 -%}
@@ -10,7 +10,21 @@ layout: base
     <img loading="lazy" src="{{ item.data.image }}" alt="{{ item.data.alt }}" />
   {%- endfor -%}
   </div>
-{%- else -%}
-  <p>Sorry, there are no images just now.</p>
-{%- endif -%}
+  {%- else -%}
+    <p>Sorry, there are no images just now.</p>
+  {%- endif -%}
 </section>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="contact--block">
+        <h3>If You'd Like To Make Contact...</h3>
+        <p>Are you in need of some High Quality Fabrication or Machining, give FW Frost Engineering a call today on <a
+            aria-label="call FW Frost Engineering for your fabrication or machining needs" href="tel:01603867301">01603
+            867301</a> or <a aria-label="call FW Frost Engineering for your fabrication or machining needs"
+            href="tel:07885170163">07885170163</a>.</p>
+      </div>
+    </div>
+  </div>
+</div>

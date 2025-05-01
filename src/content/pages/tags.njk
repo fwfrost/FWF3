@@ -1,0 +1,24 @@
+---
+layout: feed
+eleventyComputed:
+  title: 'Tag Archive: {{ tag | slug }}'
+  description: 'A collection of articles from our journal sorted by the {{ tag | slug }} tag, which makes it easier to find the content you are interested in.'
+ogType: website
+jsonldType: page
+pageType: blog
+keywords: ['Tags', 'Blog', 'Posts', 'Articles']
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter:
+    - all
+    - fabImages
+    - machineImages
+    - vacancies
+    - tagList
+    - categoryList
+    - releasedPosts
+permalink: '/tags/{{ tag | slug }}/'
+bkgdimage: /assets/images/stainless_steel_machined_part.jpg
+---

@@ -45,16 +45,12 @@
   padding: 0.8rem;
   position: fixed;
   transition: 200ms;
-  width: 30vw;
+  min-width: fit-content;
   z-index: 99990;
 }
 
 .cookieConsent {
   margin: 0 auto;
-}
-
-.cookieConsent__Content {
-  margin-right: 40px;
 }
 
 .cookieConsent__Title {
@@ -76,9 +72,15 @@
   text-decoration: none;
 }
 
+.cookieConsent__Left {
+  max-width: 52ch;
+  padding: 0;
+}
+
 .cookieConsent__Right {
   align-items: flex-start;
   display: flex;
+  max-width: fit-content;
   padding: 0;
 }
 
@@ -187,7 +189,8 @@
 
   &:hover {
     background: var(--sec-500);
-    color: var(--pri-500);
+    border: var(--bor);
+    color: var(--f-color-inv);
   }
 }
 
@@ -201,7 +204,9 @@
   padding: 1ch 2ch;
 
   &:hover {
-    background: var(--sec-900);
+    background: var(--sec-500);
+    border: var(--bor);
+    color: var(--f-color-inv);
   }
 }
 
