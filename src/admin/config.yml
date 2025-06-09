@@ -18,7 +18,7 @@ collections:
     fields:
     - {label: "Title", name: "title", widget: "string"}
     - {label: "Description", name: "summary", widget: "string"}
-    - {label: "Date", name: "date", widget: "datetime", default: "{{now}}", date_format: "DD.MM.YYYY", time_format: "HH:mm"}
+    - {label: "Date", name: "date", widget: "datetime", default: false, format:"YYYY-MM-DDTHH:mm:ssZ"}
     - {label: "Keywords", name: "keywords", widget: "list"}
     - {label: "Tags", name: "tags", widget: "list"}
     - {label: "Categories", name: "categories", widget: "list"}
@@ -63,6 +63,7 @@ collections:
     create: true
     slug: ""
     fields:
+    - {label: "Title", name: "title", widget: "string"}
     - {label: "Image", name: "image", widget: "image"}
     - {label: "Image Alt", name: "imageAlt", widget: "string"}
 
@@ -93,6 +94,7 @@ collections:
     create: true
     slug: ""
     fields:
+    - {label: "Title", name: "title", widget: "string"}
     - {label: "Image", name: "image", widget: "image"}
     - {label: "Image Alt", name: "imageAlt", widget: "string"}
 
