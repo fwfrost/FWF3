@@ -1,0 +1,6 @@
+---
+title: Large Scale Facilities
+icon: fold
+---
+
+Ready to tackle fabrications of any size, our in-house cutting and folding accommodates materials up to 4 meters. This robust capability efficiently supports both small-scale and heavy fabrication requirements for diverse projects.

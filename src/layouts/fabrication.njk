@@ -2,8 +2,23 @@
 layout: base
 ---
 
-<section class="l--wrapper">
-  {{ content | safe }}
+<section class="container">
+  <div class="row">
+    <div class="auto--grid--fit">
+      {%- if collections.fabBlocks.length > 0 -%}
+      {%- for item in collections.fabBlocks | sort(false, false, 'data.image') -%}
+    <div class="block">
+      <h2>{% icon 'fak:' + item.data.icon %} {{ item.data.title }}</h2>
+      {{ item.content | safe }}
+    </div>
+    {%- endfor -%}
+    {%- endif -%}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-10">
+    {{ content | safe }}
   <div class="block--grid">
     {%- if collections.fabImages.length > 0 -%}
     {%- for item in collections.fabImages | sort(false, false, 'data.image') -%}
@@ -13,9 +28,24 @@ layout: base
   {%- else -%}
   <p>Sorry, there are no images just now.</p>
   {%- endif -%}
-</section>
+  </div>
 
-<div class="container">
+  <div class="col-md-2">
+    <div>
+      {%- if collections.fabLinks.length > 0 -%}
+      {%- for item in collections.fabLinks | sort(false, false, 'data.image') -%}
+      <a target="_blank" rel="noopener" aria-label="Link to {{ item.data.title }}" href="{{ item.data.url }}">
+      <img loading="lazy" src="{{ item.data.image }}" alt="{{ item.data.alt }}" />
+      </a>
+      {%- endfor -%}
+    </div>
+    {%- else -%}
+    <p>Sorry, there are no images just now.</p>
+    {%- endif -%}
+    </div>
+  </div>
+</div>
+
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
       <div class="contact--block">
@@ -28,3 +58,4 @@ layout: base
     </div>
   </div>
 </div>
+</section>

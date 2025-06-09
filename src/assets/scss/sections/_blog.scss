@@ -56,16 +56,6 @@
 
   *:has(+ h2) {
     margin-bottom: .6rem;
-}
-
-  p {
-    display: inline-block;
-    margin-bottom: auto;
-    padding: 0 .6rem 0 0;
-  }
-
-  p:last-of-type {
-    padding: .6rem;
   }
 }
 

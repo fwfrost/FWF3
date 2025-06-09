@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
+        <loc>https://www.fwfrost-engineers.co.uk/news/turning-assembly-fixture/</loc>
+        <lastmod>2018-02-21T15:29:00.000Z</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+    <url>
+        <loc>https://www.fwfrost-engineers.co.uk/news/haas-vf4-ss/</loc>
+        <lastmod>2024-02-09T15:29:00.000Z</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+    <url>
         <loc>https://www.fwfrost-engineers.co.uk/news/new-axiom-too-1200-cmm/</loc>
         <lastmod>2024-03-02T15:29:00.000Z</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
     <url>
@@ -109,8 +115,62 @@
         <loc>https://www.fwfrost-engineers.co.uk/content/fab-images/bespoke-trolley-fabrication/</loc>
         <lastmod>2025-04-27T20:01:05.135Z</lastmod></url>
     <url>
-        <loc>https://www.fwfrost-engineers.co.uk/categories/inspection/</loc>
+        <loc>https://www.fwfrost-engineers.co.uk/categories/design/</loc>
         <lastmod>2025-04-28T06:34:13.148Z</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
     <url>
         <loc>https://www.fwfrost-engineers.co.uk/tags/inspection/</loc>
-        <lastmod>2025-04-28T06:34:13.210Z</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url></urlset>
+        <lastmod>2025-04-28T06:34:13.210Z</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url>
+        <loc>https://www.fwfrost-engineers.co.uk/content/fab-links/rehm/</loc>
+        <lastmod>2025-05-06T12:01:14.873Z</lastmod></url>
+    <url>
+        <loc>https://www.fwfrost-engineers.co.uk/content/fab-links/amada/</loc>
+        <lastmod>2025-05-06T12:01:14.880Z</lastmod></url>
+    <url>
+        <loc>https://www.fwfrost-engineers.co.uk/content/fab-links/kingsland/</loc>
+        <lastmod>2025-05-06T12:01:14.887Z</lastmod></url>
+    <url>
+        <loc>https://www.fwfrost-engineers.co.uk/content/fab-links/esab/</loc>
+        <lastmod>2025-05-06T12:01:14.940Z</lastmod></url>
+    <url>
+        <loc>https://www.fwfrost-engineers.co.uk/content/fab-links/lorch/</loc>
+        <lastmod>2025-05-06T12:01:14.958Z</lastmod></url>
+    <url>
+        <loc>https://www.fwfrost-engineers.co.uk/content/machine-links/aberlink/</loc>
+        <lastmod>2025-05-06T12:56:08.601Z</lastmod></url>
+    <url>
+        <loc>https://www.fwfrost-engineers.co.uk/content/machine-links/haas/</loc>
+        <lastmod>2025-05-06T12:56:08.606Z</lastmod></url>
+    <url>
+        <loc>https://www.fwfrost-engineers.co.uk/content/machine-links/harrison/</loc>
+        <lastmod>2025-05-06T12:56:08.613Z</lastmod></url>
+    <url>
+        <loc>https://www.fwfrost-engineers.co.uk/content/machine-links/onecnc/</loc>
+        <lastmod>2025-05-06T12:56:08.619Z</lastmod></url>
+    <url>
+        <loc>https://www.fwfrost-engineers.co.uk/content/machine-links/colchester/</loc>
+        <lastmod>2025-05-06T12:56:08.621Z</lastmod></url>
+    <url>
+        <loc>https://www.fwfrost-engineers.co.uk/content/machine-links/delapena/</loc>
+        <lastmod>2025-05-06T13:11:26.934Z</lastmod></url>
+    <url>
+        <loc>https://www.fwfrost-engineers.co.uk/content/machine-blocks/one/</loc>
+        <lastmod>2025-05-06T13:48:17.943Z</lastmod></url>
+    <url>
+        <loc>https://www.fwfrost-engineers.co.uk/content/fab-blocks/one/</loc>
+        <lastmod>2025-05-06T15:23:42.406Z</lastmod></url>
+    <url>
+        <loc>https://www.fwfrost-engineers.co.uk/content/machine-blocks/two/</loc>
+        <lastmod>2025-05-06T15:31:29.071Z</lastmod></url>
+    <url>
+        <loc>https://www.fwfrost-engineers.co.uk/content/machine-blocks/three/</loc>
+        <lastmod>2025-05-06T15:31:40.584Z</lastmod></url>
+    <url>
+        <loc>https://www.fwfrost-engineers.co.uk/content/fab-blocks/two/</loc>
+        <lastmod>2025-05-06T15:42:56.433Z</lastmod></url>
+    <url>
+        <loc>https://www.fwfrost-engineers.co.uk/content/fab-blocks/three/</loc>
+        <lastmod>2025-05-06T15:42:56.451Z</lastmod></url>
+    <url>
+        <loc>https://www.fwfrost-engineers.co.uk/admin/</loc>
+        <lastmod>2025-06-09T06:40:18.528Z</lastmod></url></urlset>

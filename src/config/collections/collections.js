@@ -61,9 +61,7 @@ export default {
   // 	------ Returns a collection of Posts -------------
   releasedPosts: collection => {
     return collection
-      .getFilteredByGlob('./src/content/posts/*.md')
-      .reverse()
-      .filter(hideFutureItems);
+      .getFilteredByGlob('./src/content/posts/*.md').reverse().filter(hideFutureItems);
   },
 
   // 	------ Returns a collection of vacancies -------
@@ -78,9 +76,29 @@ export default {
     return collection.getFilteredByTags('fabImages');
   },
 
+  // 	------ Returns a collection of fabrication images -------
+  fabLinks: collection => {
+    return collection.getFilteredByTags('fabLinks');
+  },
+
+  // 	------ Returns a collection of fabrication blocks -------
+  fabBlocks: collection => {
+    return collection.getFilteredByTags('fabBlocks');
+  },
+
   // 	------ Returns a collection of machining images -------
   machineImages: collection => {
     return collection.getFilteredByTags('machineImages');
+  },
+
+  // 	------ Returns a collection of machining links -------
+  machineLinks: collection => {
+    return collection.getFilteredByTags('machineLinks');
+  },
+
+  // 	------ Returns a collection of machining blocks -------
+  machineBlocks: collection => {
+    return collection.getFilteredByTags('machineBlocks');
   },
 
   // 	------ Create blog categories collection -------
@@ -110,6 +128,10 @@ export default {
               "all",
               "machineImages",
               "fabImages",
+              "machineBlocks",
+              "fabBlocks",
+              "machineLinks",
+              "fabLinks",
               "tagList",
               "categorylist",
               "featuredPosts",

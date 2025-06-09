@@ -2,7 +2,22 @@
 layout: base
 ---
 
-<section class="l--wrapper">
+<section class="container">
+  <div class="row">
+    <div class="auto--grid--fit">
+      {%- if collections.machineBlocks.length > 0 -%}
+      {%- for item in collections.machineBlocks | sort(false, false, 'data.image') -%}
+    <div class="block">
+      <h2>{% icon 'fak:' + item.data.icon %} {{ item.data.title }}</h2>
+      {{ item.content | safe }}
+    </div>
+    {%- endfor -%}
+    {%- endif -%}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-10">
   {{ content | safe }}
   <div class="block--grid">
   {%- if collections.machineImages.length > 0 -%}
@@ -13,9 +28,23 @@ layout: base
   {%- else -%}
     <p>Sorry, there are no images just now.</p>
   {%- endif -%}
-</section>
+</div>
+<div class="col-md-2">
+  <div>
+    {%- if collections.machineLinks.length > 0 -%}
+    {%- for item in collections.machineLinks | sort(false, false, 'data.image') -%}
+    <a target="_blank" rel="noopener" aria-label="Link to {{ item.data.title }}" href="{{ item.data.url }}">
+    <img loading="lazy" src="{{ item.data.image }}" alt="{{ item.data.alt }}" />
+    </a>
+    {%- endfor -%}
+  </div>
+  {%- else -%}
+  <p>Sorry, there are no images just now.</p>
+  {%- endif -%}
+  </div>
+</div>
+</div>
 
-<div class="container">
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
       <div class="contact--block">

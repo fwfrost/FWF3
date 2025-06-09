@@ -1,0 +1,6 @@
+---
+title: Turning
+icon: lathe
+---
+
+CNC control brings precision to all turning. With conventional, driven, and Y-axis lathes, we flexibly handle any production requirement, or material, delivering outstanding service and realistic pricing.
