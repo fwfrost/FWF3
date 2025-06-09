@@ -3,7 +3,7 @@ backend:
   repo: fat-buddha-designs/FWF3
   branch: main
 
-site_url: https://birds-of-norfolk-decap.netlify.app
+site_url: https://fwfrost-engineers.netlify.app
 
 # publish_mode: editorial_workflow
 media_folder: 'src/assets/images/' # Media files will be stored in the repo under src/assets/images/posts
