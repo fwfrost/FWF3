@@ -21,7 +21,7 @@ The use of this website is subject to the following terms of use:
 
 The content of the pages of this website is for your general information and use only. It is subject to change without notice.
 
-This website uses cookies to monitor browsing preferences. If you do allow cookies to be used, the following personal information may be stored by us for use by third parties; See our [privacy policy](/policies/#privacy-policy).
+This website uses cookies to monitor browsing preferences. If you do allow cookies to be used, the following personal information may be stored by us for use by third parties; See our [privacy policy](/privacy-policy/).
 
 Neither we nor any third parties provide any warranty or guarantee as to the accuracy, timeliness, performance, completeness or suitability of the information and materials found or offered on this website for any particular purpose. You acknowledge that such information and materials may contain inaccuracies or errors and we expressly exclude liability for any such inaccuracies or errors to the fullest extent permitted by law.
 
