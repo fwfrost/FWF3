@@ -1,8 +1,4 @@
-import Accommodation from "/admin/preview-templates/accommodation.js";
 import Page from "/admin/preview-templates/page.js";
-import Sightings from "/admin/preview-templates/sightings.js";
-import Sites from "/admin/preview-templates/sites.js";
-import Species from "/admin/preview-templates/species.js";
 
 // Register the Post component as the preview for entries in the blog collection
 CMS.registerPreviewTemplate("pages", Page);

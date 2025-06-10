@@ -12,11 +12,10 @@ bkgdimage: /assets/images/assembled_components.jpg
 ---
 
 <section class="sitemap--list | s--wrapper" data-pagefind-ignore>
-  <h1>{{ title }}</h1>
   <h2>Links to our Primary Pages</h2>
     <p>We provide a sitemap so that you can find any page on our website by clicking on the relevant link, you may need this if your have been sent or mistyped a page url, good luck.</p>
     {%- if navigation.firstnav -%}
-    <ul role="list">
+    <ul>
       <li aria-label="Our primary website pages" class="is--bold">Primary Pages</li>
     {%- for item in navigation.firstnav -%}
       {% set externalAttribute = '' %}
@@ -33,7 +32,7 @@ bkgdimage: /assets/images/assembled_components.jpg
     {%- endif -%}
     <h3>Links to our Secondary Pages</h3>
     {%- if navigation.secondnav %}
-    <ul role="list">
+    <ul>
       <li aria-label="Our secondary website pages" class="is--bold">Secondary Pages</li>
     {%- for item in navigation.secondnav -%}
       {% set externalAttribute = '' %}

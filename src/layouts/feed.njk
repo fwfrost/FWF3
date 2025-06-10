@@ -19,7 +19,6 @@ pageType: blog
     {%- include "partials/micro/cat-tags.njk" -%}
   </aside>
   <div>
-    <h1>{{ title }}</h1>
     {%- include "partials/micro/post-list.njk" -%}
     {% if tag or category %}
     <a class="button" aria-label="back to the journal listing page" href="/news/">{% icon "fas:caret-left" %}All Posts</a>

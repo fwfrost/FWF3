@@ -9,7 +9,6 @@ bkgdimage: /assets/images/stainless_steel_machined_part.jpg
 
 
 <section class="m--wrapper">
-  <h1>{{ title }}</h1>
 
   {%- if collections.vacancies.length > 0 -%}
   {%- for item in collections.vacancies | sort(false, false, 'data.title') -%}

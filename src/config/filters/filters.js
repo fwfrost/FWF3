@@ -55,7 +55,7 @@ export default {
       zone: 'GMT'
     })
       .setLocale('en')
-      .toHTTP();
+      .toISO();
   },
 
   dateRFC3339: date => {

@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: feed
 pagination:
   data: collections.categoryList
   size: 1
@@ -19,24 +19,3 @@ sitemap: {
 keywords: ['Categories', 'Category', 'Blog', 'Posts', 'Articles']
 bkgdimage: /assets/images/machined-stainless-plate.jpg
 ---
-
-<section class="l--wrapper markdown--block">
-  <aside>
-    {%- include "partials/micro/cat-tags.njk" -%}
-  </aside>
-  <div>
-    <h1>{{ title }}</h1>
-  {% set posts = collections.releasedPosts | include("data.categories", category.title) %}
-  {% for item in posts %}
-  <div class="post--list--block">
-    <h2><a href="{{ item.url }}" rel="bookmark">{{ item.data.title }}</a></h2>
-    <div>
-    <p class="is--meta">Author: {{ site.authorName }}</p>
-    <p class="is--meta">Published: <time datetime="{{ item.date | dateToFormat }}">{{ item.date | dateToFormat }}</time></p>
-    </div>
-    {{ item.content | safe | truncate(280 )}}
-  </div>
-  {% endfor %}
-  <a class="button" aria-label="back to the journal listing page" href="/news/">{% icon "fas:caret-left" %}All Posts</a>
-</div>
-</section>

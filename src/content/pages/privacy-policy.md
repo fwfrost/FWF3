@@ -7,8 +7,6 @@ keywords: ['Privacy Policy', 'Privacy']
 bkgdimage: /assets/images/machined-stainless-plate.jpg
 ---
 
-# Privacy Policy
-
 This privacy policy forms part of the [terms of use](/terms-of-use/) that govern your use of the '{{ site.name }}' website.
 
 In May 2018, the original Data Protection Act 1998 was replaced by General Data Protection Regulation (GDPR). This had an impact on small businesses such as mine to notify users of how we collect and use their personal details. This page outlines how I do this.
