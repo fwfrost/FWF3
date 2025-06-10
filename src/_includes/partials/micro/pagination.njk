@@ -1,5 +1,6 @@
 <div class="paging">
-  <nav class="page--navigation" aria-labelledby="pagination">
+  <nav class="page--navigation" aria-labelledby="pagination-heading">
+    <h2 id="pagination-heading" class="visually--hidden">Pagination</h2> {# Add this heading, visually hidden #}
     <ul>
       <li>{% if page.url != pagination.href.first %}<a href="{{ pagination.href.first }}">First</a>{% else
         %}<span>First</span>{% endif %}</li>
@@ -9,8 +10,8 @@
       <li><a href="{{ pagination.hrefs[ loop.index0 ] }}" {% if page.url==pagination.hrefs[ loop.index0 ] %}
           aria-current="page" {% endif %}>Page {{ loop.index }}</a></li>
       {%- endfor %}
-      <li>{% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next</a>{% else %}Next{% endif %}</li>
-      <li>{% if page.url != pagination.href.last %}<a href="{{ pagination.href.last }}">Last</a>{% else %}Last{% endif %}</li>
+      <li>{% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next</a>{% else %}<span>Next</span>{% endif %}</li>
+      <li>{% if page.url != pagination.href.last %}<a href="{{ pagination.href.last }}">Last</a>{% else %}<span>Last</span>{% endif %}</li>
     </ul>
   </nav>
 </div>

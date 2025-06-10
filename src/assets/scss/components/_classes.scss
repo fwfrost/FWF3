@@ -4,7 +4,7 @@ hr {
   margin: 1em 20%;
 }
 
-.visually-hidden:not(:focus) {
+.visually--hidden:not(:focus) {
   clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
