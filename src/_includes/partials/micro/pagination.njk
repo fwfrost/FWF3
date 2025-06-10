@@ -1,6 +1,5 @@
 <div class="paging">
-  <nav class="page--navigation" aria-labelledby="pagination-heading">
-    <h2 id="pagination-heading" class="visually--hidden">Pagination</h2> {# Add this heading, visually hidden #}
+  <nav class="page--navigation" aria-label="Pagination Navigation">
     <ul>
       <li>{% if page.url != pagination.href.first %}<a href="{{ pagination.href.first }}">First</a>{% else
         %}<span>First</span>{% endif %}</li>
