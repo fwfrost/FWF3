@@ -20,8 +20,7 @@ keywords: ['Categories', 'Category', 'Blog', 'Posts', 'Articles']
 bkgdimage: /assets/images/machined-stainless-plate.jpg
 ---
 
-{% block content %}
-<section class="markdown--block">
+<section class="l--wrapper markdown--block">
   <aside>
     {%- include "partials/micro/cat-tags.njk" -%}
   </aside>
@@ -39,5 +38,5 @@ bkgdimage: /assets/images/machined-stainless-plate.jpg
   </div>
   {% endfor %}
   <a class="button" aria-label="back to the journal listing page" href="/news/">{% icon "fas:caret-left" %}All Posts</a>
+</div>
 </section>
-{% endblock %}

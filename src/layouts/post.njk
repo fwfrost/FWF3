@@ -17,7 +17,7 @@ pageType: blog
   <ul class="inline--list" aria-describedby="tags-desc">
     <li class="is--meta">Tags: </li>
     {% for tag in tags %}
-    <li class="is--meta"><a href="/tag/{{ tag | slug }}/">{{ tag | title | replace(' ', '') }}</a></li>
+    <li class="is--meta"><a href="/tags/{{ tag | slug }}/">{{ tag | title | replace(' ', '') }}</a></li>
     {% endfor %}
     {% endif %}
     <li class="is--meta">Category:</li>

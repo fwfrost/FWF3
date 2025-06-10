@@ -101,6 +101,31 @@ export default {
     return collection.getFilteredByTags('machineBlocks');
   },
 
+    // 	------ Create blog categories collection -------
+  categories: function (collectionApi) {
+    const categoryMap = new Map();
+
+    collectionApi.getFilteredByGlob('./src/content/posts/**/*.md').forEach(post => {
+      const categories = post.data.categories || [];
+      categories.forEach(cat => {
+        const slug = cat.toLowerCase().replace(/\s+/g, "-");
+
+        if (!categoryMap.has(slug)) {
+          categoryMap.set(slug, {
+            title: cat,
+            slug,
+            items: []
+          });
+        }
+
+        categoryMap.get(slug).items.push(post);
+      });
+    });
+
+    return [...categoryMap.values()];
+  },
+
+
   // 	------ Create blog categories collection -------
   categoryList: collection => {
     let allCategories = getAllKeyValues(

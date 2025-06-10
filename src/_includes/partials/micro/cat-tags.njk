@@ -1,8 +1,8 @@
 <p class="is--bold">Categories:-</p>
 <ul class="inline--list">
-  {%- for category in collections.categoryList -%}
-  <li><a href="/categories/{{ category.slug }}/">{{ category.title | capitalize }}</a></li>
-  {%- endfor -%}
+  {% for categoryItem in collections.categoryList %}
+  <li><a href="/categories/{{ categoryItem.slug }}/">{{ categoryItem.title }}</a></li>
+  {% endfor %}
 </ul>
 <p class="is--bold">Tags:-</p>
 <ul class="inline--list">

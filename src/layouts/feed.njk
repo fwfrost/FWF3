@@ -9,6 +9,9 @@ pageType: blog
   {% set postListItems = collections[tag] %}
 {%- endif -%}
 
+{%- if category -%}
+  {% set postListItems = category.items %}
+{%- endif -%}
 
 {% block content %}
 <section class="l--wrapper markdown--block">
@@ -18,10 +21,10 @@ pageType: blog
   <div>
     <h1>{{ title }}</h1>
     {%- include "partials/micro/post-list.njk" -%}
-    {% if tag %}
+    {% if tag or category %}
     <a class="button" aria-label="back to the journal listing page" href="/news/">{% icon "fas:caret-left" %}All Posts</a>
     {% endif %}
-    {%- if not tag -%}
+    {%- if not tag and not category -%}
     {% include "partials/micro/pagination.njk" %}
     {%- endif -%}
   </div>

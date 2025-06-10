@@ -3454,6 +3454,10 @@ main svg:has(use[xlink\:href*="#fa"]) {
   vertical-align: middle;
   width: 1em;
 }
+main .button svg:has(use[href*="#fa"]),
+main .button svg:has(use[xlink\:href*="#fa"]) {
+  color: var(--wh-color);
+}
 main section {
   margin: 0 auto;
   max-inline-size: var(--n-width);

@@ -19,15 +19,20 @@ main {
     }
   }
 
-  svg:has(use[href*="#fa"]),
-svg:has(use[xlink\:href*="#fa"]) {
-  display: inline;
-  color: var(--sec-600);
-  height: 1em;
-  margin-right: .4rem;
-  vertical-align: middle;
-  width: 1em;
-}
+    svg:has(use[href*="#fa"]),
+    svg:has(use[xlink\:href*="#fa"]) {
+    display: inline;
+    color: var(--sec-600);
+    height: 1em;
+    margin-right: .4rem;
+    vertical-align: middle;
+    width: 1em;
+  }
+
+  .button svg:has(use[href*="#fa"]),
+  .button svg:has(use[xlink\:href*="#fa"]) {
+    color: var(--wh-color);
+  }
 
   section {
     margin: 0 auto;
