@@ -153,6 +153,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/browserconfig.xml');
   eleventyConfig.addPassthroughCopy('src/site.webmanifest');
   eleventyConfig.addPassthroughCopy({'src/svg': '/'});
+  eleventyConfig.addPassthroughCopy('src/admin');
 
   // ---------- Server Config --------------------------
   eleventyConfig.setServerOptions({
