@@ -1,9 +1,7 @@
 backend:
-  name: github
+  name: git-gateway
   repo: fat-buddha-designs/FWF3
   branch: main
-
-site_url: https://fwfrost-engineers.netlify.app
 
 media_folder: 'src/assets/images/'
 public_folder: '/assets/images/'
