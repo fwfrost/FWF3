@@ -11,9 +11,9 @@
     "> 0.5%"
   ],
   "scripts": {
-    "start": "npm run dev",
-    "dev": "concurrently \"npm run clean\" \"npm run eleventy:dev\" \"npm run watch:sass\" ",
-    "build": "concurrently \"npm run clean\" \"npm run favicons\" \"npm run eleventy:prod\" \"npm run sass:prod\" && npx pagefind --site _site --force-language unknown",
+    "start": "bun run dev",
+    "dev": "concurrently \"bun run clean\" \"bun run eleventy:dev\" \"bun run watch:sass\" ",
+    "build": "concurrently \"bun run clean\" \"bun run favicons\" \"bun run eleventy:prod\" \"bun run sass:prod\" && npx pagefind --site _site --force-language unknown",
     "eleventy:dev": "cross-env ELEVENTY_ENV=development npx @11ty/eleventy --serve --quiet",
     "watch:sass": "npx sass ./src/assets/scss:_site/assets/css --watch",
     "sass:prod": "npx sass --no-source-map --style=compressed ./src/assets/scss:_site/assets/css",

@@ -1,1 +1,26 @@
-<!doctype html><html dir="ltr" lang="en"><head><meta charset="utf-8"><meta content="width=device-width,initial-scale=1" name="viewport"><meta content="noindex" name="robots"><link href="https://unpkg.com" rel="dns-prefetch"><link href="https://identity.netlify.com" rel="dns-prefetch"><title>Content Manager</title></head><body><script src="https://unpkg.com/decap-cms@3.6.4/dist/decap-cms.js"></script><script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script><script src="/admin/preview-templates/index.js" type="module"></script><script>window.netlifyIdentity&&window.netlifyIdentity.on("init",(n=>{n?window.netlifyIdentity.on("logout",(()=>{document.location.href="/admin/"})):window.netlifyIdentity.on("login",(()=>{document.location.href="/admin/"}))}))</script></body></html>
+<!doctype html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <link rel="dns-prefetch" href="https://unpkg.com">
+    <title>Content Manager</title>
+  </head>
+  <body>
+      <!-- Include the script that builds the page and powers Decap CMS -->
+    <script src="https://unpkg.com/decap-cms@3.6.4/dist/decap-cms.js"></script>
+    <script>
+      window.CMS_MANUAL_INIT = true;
+    </script>
+    <script>
+      // Custom init to support Auth0
+      fetch("/admin/config.yml")
+        .then(response => response.text())
+        .then(configYml => {
+          const config = window.CMS.parseYAML(configYml);
+          window.CMS.init({ config });
+        });
+    </script>
+  </body>
+</html>

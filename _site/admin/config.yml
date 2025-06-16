@@ -1,0 +1,110 @@
+backend:
+  name: git-gateway
+  repo: fat-buddha-designs/FWF3
+  branch: main
+
+media_folder: 'src/assets/images/'
+public_folder: '/assets/images/'
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "/src/content/posts"
+    create: true
+    slug: ""
+    fields:
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Description", name: "summary", widget: "string"}
+    - {label: "Date", name: "date", widget: "datetime", default: false, format:"YYYY-MM-DDTHH:mm:ssZ"}
+    - {label: "Keywords", name: "keywords", widget: "list"}
+    - {label: "Tags", name: "tags", widget: "list"}
+    - {label: "Categories", name: "categories", widget: "list"}
+    - {label: "Image", name: "image", widget: "image"}
+    - {label: "Image Alt", name: "imageAlt", widget: "string"}
+    - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "vacancies"
+    label: "Vacancies"
+    folder: "/src/content/vacancies/"
+    path: "{{slug}}"
+    create: true
+    slug: "{{title}}"
+    fields:
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "fab-blocks"
+    label: "Fabrication Page Blocks"
+    folder: "/src/content/fab-blocks"
+    create: true
+    slug: ""
+    fields:
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Icon", name: "icon", widget: "string"}
+    - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "fab-links"
+    label: "Fabrication Page Links"
+    folder: "/src/content/fab-links"
+    create: true
+    slug: ""
+    fields:
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Image", name: "image", widget: "image"}
+    - {label: "Image Alt", name: "imageAlt", widget: "string"}
+    - {label: "Url", name: "url", widget: "string"}
+
+  - name: "fab-images"
+    label: "Fabrication Page Images"
+    folder: "/src/content/fab-images"
+    create: true
+    slug: ""
+    fields:
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Image", name: "image", widget: "image"}
+    - {label: "Image Alt", name: "imageAlt", widget: "string"}
+
+  - name: "machine-blocks"
+    label: "Machining Page Blocks"
+    folder: "/src/content/machine-blocks"
+    create: true
+    slug: ""
+    fields:
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Icon", name: "icon", widget: "string"}
+    - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "machine-links"
+    label: "Machining Page Links"
+    folder: "/src/content/machine-links"
+    create: true
+    slug: ""
+    fields:
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Image", name: "image", widget: "image"}
+    - {label: "Image Alt", name: "imageAlt", widget: "string"}
+    - {label: "Url", name: "url", widget: "string"}
+
+  - name: "machine-images"
+    label: "Machining Page Images"
+    folder: "/src/content/machine-images"
+    create: true
+    slug: ""
+    fields:
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Image", name: "image", widget: "image"}
+    - {label: "Image Alt", name: "imageAlt", widget: "string"}
+
+  - name: "pages"
+    label: "Page"
+    folder: "/src/content/pages"
+    create: true
+    slug: "{{slug}}"
+    fields:
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Description", name: "summary", widget: "string"}
+    - {label: "Keywords", name: "keywords", widget: "list"}
+    - {label: "Layout", name: "layout", widget: "string"}
+    - {label: "Permalink", name: "permalink", widget: "string"}
+    - {label: "Background Image", name: "bkgdimage", widget: "image"}
+    - {label: "Body", name: "body", widget: "markdown"}
