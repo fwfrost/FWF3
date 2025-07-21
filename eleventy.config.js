@@ -13,7 +13,7 @@ import pluginRss from '@11ty/eleventy-plugin-rss';
 import fontAwesomePlugin from "@11ty/font-awesome";
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { all } from '@awesome.me/kit-c1b42413a1/icons';
-import generateSocialImages from '@my-ginger-pussy/eleventy-social-images';
+import generateSocialImages from '@my-ginger-pussy/eleventy-social-images-v3';
 import pluginTOC from '@uncenter/eleventy-plugin-toc';
 import markdownLib from './src/config/markdown/markdown.js';
 
@@ -96,14 +96,14 @@ export default async function (eleventyConfig) {
     }
   });
   eleventyConfig.addPlugin(generateSocialImages, {
-    promoImage: './src/assets/images/fw-frost-engineers-logo.jpg',
+    promoImage: './src/assets/images/fwfrost-engineers-logo.png',
     outputDir: './_site/socialImages',
     urlPath: '/socialImages',
     siteUrl: 'Website ~ https://www.fwfrost-engineers.co.uk',
     siteEmail: 'Email ~ sales@fwfrost-engineers.co.uk',
     titleColor: '#fff',
     bgColor: '#fff',
-    terminalBgColor: '#008080',
+    terminalBgColor: '#4e6591',
     lineBreakAt: '48'
   });
 

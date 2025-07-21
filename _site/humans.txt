@@ -15,7 +15,7 @@ Location: Norfolk, England
 Zach Leatherman (@zachleat)
 
 /* SITE */
-Last Update: Monday 16 June 2025 at 12:33 GMT,
+Last Update: Monday 21 July 2025 at 09:46 GMT,
 Standards: HTML5, CSS3
 Components: Eleventy, NPM, Node, robots.txt, humans.txt, Bulma
 Software: VS Code
