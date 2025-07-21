@@ -9,59 +9,5 @@
   </head>
   <body>
     <script src="https://unpkg.com/decap-cms@3.6.4/dist/decap-cms.js"></script>
-    <script>
-      window.CMS_MANUAL_INIT = true;
-    </script>
-    <script>
-      const auth0Config = {
-        domain: "AUTH0_DOMAIN", // e.g., dev-your-tenant.us.auth0.com
-        clientId: "AUTH0_CLIENT_ID",
-        audience: `https://${"AUTH0_DOMAIN"}/api/v2/`, // Or your custom API identifier
-      };
-
-      // Custom init to support Auth0
-      fetch("/admin/config.yml")
-        .then(response => response.text())
-        .then(configYml => {
-          const config = window.CMS.parseYAML(configYml);
-
-          // Configure Auth0 in Decap CMS
-          // If you're using the Netlify Auth0 extension, Decap CMS might auto-detect or need specific config
-          // For a custom OAuth client, you'd integrate Auth0's SDK here
-          // For the official Netlify Auth0 extension, it should simplify this greatly.
-
-          // If you're using a custom external OAuth proxy function (as described in section B),
-          // you'd set up the backend with type `oauth` or `github` and specify the `base_url`
-          // and `auth_endpoint` to point to your Netlify Function.
-
-          // Let's assume for a moment the Netlify Auth0 extension handles the git-gateway interaction
-          // and Decap CMS just needs to know about the Auth0 client.
-          // This might be closer to what Netlify intends with their new integration.
-
-          window.CMS.init({
-            config,
-            // You might need to explicitly register an external auth provider
-            // This is less common with the official Netlify Auth0 extension if it works seamlessly.
-            // However, if you are implementing a custom Auth0 flow for Decap CMS directly
-            // without relying on Netlify's specific Git Gateway integrations,
-            // you might look into Decap CMS's `backend.auth` options or
-            // how to provide a custom `Auth` object to `CMS.init`.
-          });
-        });
-
-        // This is crucial for the login flow:
-        // For the official Netlify Auth0 integration, you generally don't add the Auth0 Lock/SDK
-        // directly in your Decap CMS admin `index.html` unless you're building a highly custom flow.
-        // The Netlify Auth0 extension is designed to replace the need for this direct integration
-        // within the CMS admin UI for authentication, as it will handle the redirection and callbacks.
-        // The default Decap CMS login button should trigger the Netlify-managed Auth0 flow.
-
-        // If the GitHub login button is still appearing and 404ing, it means Decap CMS
-        // is still trying to use its default GitHub backend authentication, not your Auth0 proxy.
-        // This is where the `auth_endpoint: auth` in your config.yml comes in.
-        // It tells Decap CMS that when it needs to authenticate for the `github` backend,
-        // it should use `https://fwfrost-engineers.netlify.app/auth`.
-        // So, your Netlify Function *must* live at this path and handle the OAuth flow.
-    </script>
   </body>
 </html>
