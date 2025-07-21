@@ -1,9 +1,10 @@
 backend:
-  name: github
+  name: git-gateway # Or 'github' if you're using a custom external OAuth proxy
   repo: fat-buddha-designs/FWF3
   branch: main
-  base_url: https://fwfrost-engineers.netlify.app
-  auth_endpoint: auth
+  # base_url and auth_endpoint might not be needed if Netlify's Auth0 extension
+  # seamlessly integrates with Git Gateway's new authentication mechanism.
+  # You might need to remove them if Netlify's Auth0 setup handles the OAuth.
 
 media_folder: 'src/assets/images/'
 public_folder: '/assets/images/'

@@ -30,7 +30,9 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.1",
     "@11ty/font-awesome": "^1.0.0-beta.1",
     "@awesome.me/kit-c1b42413a1": "^1.0.4",
-    "@my-ginger-pussy/eleventy-social-images-v3": "^1.0.9"
+    "@my-ginger-pussy/eleventy-social-images-v3": "^1.0.9",
+    "jsonwebtoken": "^9.0.2",
+    "node-fetch": "^3.3.2"
   },
   "devDependencies": {
     "@toycode/markdown-it-class": "^1.2.4",
