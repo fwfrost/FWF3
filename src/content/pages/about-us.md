@@ -26,6 +26,6 @@ In 2009 and 2010 three members of staff retired with a combined service of 149 y
 
 The company maintains its level of engineering expertise with all shop floor employees completing apprenticeships. FW Frost is currently actively involved with the Group Training Association to improve the provision of engineering skills & training in the Norfolk area.
 
-Recent years have seen considerable investment in equipment to improve our manufacturing processes & early development of the site included a new 11200sq ft Machine Shop to complement the existing 12000sq ft Fabrication shop.
+Recent years have seen considerable investment in new equipment to improve our manufacturing processes & early development of the site included a new 11200sq ft Machine Shop to complement the existing 12000sq ft Fabrication shop.
 
 With our loyal and skilled workforce, we continue to develop in many directions, striving to provide excellent product quality along with high standards of customer care at an affordable price.
