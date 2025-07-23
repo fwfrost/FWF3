@@ -10,15 +10,7 @@
     [headers.values]
     Access-Control-Allow-Origin = "*"
 
-[functions]
-  directory = "netlify/functions"
-
 [[redirects]]
     from = "*"
     to = "/404/"
     status = 404
-
-[[redirects]]
-  from = "/auth"
-  to = "/.netlify/functions/auth"
-  status = 200

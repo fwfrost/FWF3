@@ -1,0 +1,177 @@
+media:
+  input: src/assets/images
+  output: assets/images
+
+
+content:
+  - name: posts
+    label: Posts
+    type: collection
+    path:: src/content/posts
+    fields:
+      - label: Title
+        name: title
+        type: string
+      - label: Description
+        name: summary
+        type: string
+      - label: Date
+        name: date
+        type: datetime
+        default: false
+        format: YYYY-MM-DDTHH:mm:ssZ
+      - label: Keywords
+        name: keywords
+        type: list
+      - label: Tags
+        name: tags
+        type: list
+      - label: Categories
+        name: categories
+        type: list
+      - label: Image
+        name: image
+        type: image
+      - label: Image Alt
+        name: imageAlt
+        type: string
+      - label: Body
+        name: body
+        type: rich-text
+
+  - name: vacancies
+    label: Vacancies
+    type: collection
+    path:: src/content/vacancies/
+    fields:
+      - label: Title
+        name: title
+        type: string
+      - label: Body
+        name: body
+        type: rich-text
+
+  - name: fab-blocks
+    label: Fabrication Page Blocks
+    type: collection
+    path:: src/content/fab-blocks
+    fields:
+      - label: Title
+        name: title
+        type: string
+      - label: Icon
+        name: icon
+        type: string
+      - label: Body
+        name: body
+        type: rich-text
+
+  - name: fab-links
+    label: Fabrication Page Links
+    type: collection
+    path:: src/content/fab-links
+    fields:
+      - label: Title
+        name: title
+        type: string
+      - label: Image
+        name: image
+        type: image
+      - label: Image Alt
+        name: imageAlt
+        type: string
+      - label: Url
+        name: url
+        type: string
+
+  - name: fab-images
+    label: Fabrication Page Images
+    type: collection
+    path:: src/content/fab-images
+    fields:
+      - label: Title
+        name: title
+        type: string
+      - label: Image
+        name: image
+        type: image
+      - label: Image Alt
+        name: imageAlt
+        type: string
+
+  - name: machine-blocks
+    label: Machining Page Blocks
+    type: collection
+    path:: src/content/machine-blocks
+    fields:
+      - label: Title
+        name: title
+        type: string
+      - label: Icon
+        name: icon
+        type: string
+      - label: Body
+        name: body
+        type: rich-text
+
+  - name: machine-links
+    label: Machining Page Links
+    type: collection
+    path:: src/content/machine-links
+    fields:
+      - label: Title
+        name: title
+        type: string
+      - label: Image
+        name: image
+        type: image
+      - label: Image Alt
+        name: imageAlt
+        type: string
+      - label: Url
+        name: url
+        type: string
+
+  - name: machine-images
+    label: Machining Page Images
+    type: collection
+    path:: src/content/machine-images
+    fields:
+      - label: Title
+        name: title
+        type: string
+      - label: Image
+        name: image
+        type: image
+      - label: Image Alt
+        name: imageAlt
+        type: string
+
+  - name: pages
+    label: Page
+    type: collection
+    path:: src/content/pages
+    fields:
+      - label: Title
+        name: title
+        type: string
+      - label: Description
+        name: summary
+        type: string
+      - label: Keywords
+        name: keywords
+        type: string
+        list:
+          collapsible: false
+      - label: Layout
+        name: layout
+        type: string
+      - label: Permalink
+        name: permalink
+        type: string
+      - label: Background Image
+        name: bkgdimage
+        type: image
+      - label: Body
+        name: body
+        type: rich-text
