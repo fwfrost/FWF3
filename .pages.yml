@@ -18,7 +18,7 @@ content:
       - name: title
         label: Title
         type: string
-      - name: summary
+      - name: description
         label: Description
         type: string
       - name: date
@@ -233,7 +233,7 @@ content:
       - name: title
         label: Title
         type: string
-      - name: summary
+      - name: description
         label: Description
         type: string
         options:
