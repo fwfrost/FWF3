@@ -64,7 +64,7 @@ The date at the end of this Cookies Policy indicates when it was last updated.
 
 ## Contact Us
 
-If you have any questions about our use of cookies or other technologies, please email us at **{{ site.email }}** or write to us at:
+If you have any questions about our use of cookies or other technologies, please email us at <a aria-label="email {{ site.name }}" href="mailto:{{ site.email }}">{{ site.email }}</a> or write to us at:
 
 *   **{{ site.name }}**
     
