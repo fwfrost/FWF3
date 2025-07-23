@@ -28,6 +28,8 @@ Our in-house processing includes cutting and folding, facilitated by our Gade gu
 
 Adding to our finishing capabilities, we now offer dull polishing for Stainless Steel up to 600mm wide, using our Grindingmaster 2000. This enhances the surface finish of fabricated parts where required.
 
+## Coded Welders
+
 Furthermore, our certified fabricators provide coded welding across a variety of materials, ensuring that all welding procedures meet the necessary standards and can be tailored precisely to individual customer requirements.
 
 Central to F W Frost's operation is our philosophy of working closely with customers. We strive to build strong relationships founded on consistently delivering quality workmanship and ensuring reliable, on-time deliveries for every project.
