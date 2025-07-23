@@ -57,7 +57,14 @@ content:
     label: Vacancies
     type: collection
     path: src/content/vacancies
-    filename: title
+    filename: "{primary}.md"
+    view:
+      fields: [ title, order ]
+      primary: title
+      sort: [ order, title ]
+      default:
+        sort: order
+        order: asc
     fields:
       - name: title
         label: Title
@@ -70,7 +77,14 @@ content:
     label: Fabrication Page Blocks
     type: collection
     path: src/content/fab-blocks
-    filename: title
+    filename: "{primary}.md"
+    view:
+      fields: [ title, order ]
+      primary: title
+      sort: [ order, title ]
+      default:
+        sort: order
+        order: asc
     fields:
       - name: title
         label: Title
@@ -86,7 +100,14 @@ content:
     label: Fabrication Page Links
     type: collection
     path: src/content/fab-links
-    filename: title
+    filename: "{primary}.md"
+    view:
+      fields: [ title, order ]
+      primary: title
+      sort: [ order, title ]
+      default:
+        sort: order
+        order: asc
     fields:
       - name: title
         label: Title
@@ -105,7 +126,14 @@ content:
     label: Fabrication Page Images
     type: collection
     path: src/content/fab-images
-    filename: title
+    filename: "{primary}.md"
+    view:
+      fields: [ title, order ]
+      primary: title
+      sort: [ order, title ]
+      default:
+        sort: order
+        order: asc
     fields:
       - name: title
         label: Title
@@ -121,7 +149,14 @@ content:
     label: Machining Page Blocks
     type: collection
     path: src/content/machine-blocks
-    filename: title
+    filename: "{primary}.md"
+    view:
+      fields: [ title, order ]
+      primary: title
+      sort: [ order, title ]
+      default:
+        sort: order
+        order: asc
     fields:
       - name: title
         label: Title
@@ -137,7 +172,14 @@ content:
     label: Machining Page Links
     type: collection
     path: src/content/machine-links
-    filename: title
+    filename: "{primary}.md"
+    view:
+      fields: [ title, order ]
+      primary: title
+      sort: [ order, title ]
+      default:
+        sort: order
+        order: asc
     fields:
       - name: title
         label: Title
@@ -156,7 +198,14 @@ content:
     label: Machining Page Images
     type: collection
     path: src/content/machine-images
-    filename: title
+    filename: "{primary}.md"
+    view:
+      fields: [ title, order ]
+      primary: title
+      sort: [ order, title ]
+      default:
+        sort: order
+        order: asc
     fields:
       - name: title
         label: Title
@@ -172,7 +221,14 @@ content:
     label: Page
     type: collection
     path: src/content/pages
-    filename: title
+    filename: "{primary}.md"
+    view:
+      fields: [ title, order ]
+      primary: title
+      sort: [ order, title ]
+      default:
+        sort: order
+        order: asc
     fields:
       - name: title
         label: Title
