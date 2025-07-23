@@ -254,7 +254,11 @@ content:
             - value: default
               label: Default
             - value: contact
-              label: Contact
+              label: contact
+            - value: fabrication
+              label: Fabrication
+            - value: machining
+              label: Machining
         default: 'base'
       - name: keywords
         label: Keywords
