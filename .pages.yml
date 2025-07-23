@@ -249,7 +249,7 @@ content:
         type: image
         options:
           multiple: false
-          path: header-images
+          media: src/assets/images/header-images
           extensions: [jpg, png]
       - name: body
         label: Body
