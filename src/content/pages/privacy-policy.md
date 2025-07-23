@@ -1,12 +1,13 @@
 ---
-layout: default
-permalink: '/privacy-policy/'
 title: Privacy Policy
-description: Our policies are important to us and help you understand and define how we operate. We have policies to cover accessibility, cookies and privacy.
-keywords: ['Privacy Policy', 'Privacy']
-bkgdimage: /assets/images/machined-stainless-plate.jpg
+description: F.W.Frosts Privacy Policy explains how we collect, use, protect,
+  and share your personal data. It details your rights and our commitment to
+  your privacy.
+keywords:
+  - Privacy Policy
+  - Privacy
+bkgdimage: assets/images/header-images/assembled-machined-parts.jpg
 ---
-
 This privacy policy forms part of the [terms of use](/terms-of-use/) that govern your use of the '{{ site.name }}' website.
 
 In May 2018, the original Data Protection Act 1998 was replaced by General Data Protection Regulation (GDPR). This had an impact on small businesses such as mine to notify users of how we collect and use their personal details. This page outlines how I do this.
@@ -47,12 +48,12 @@ We do not use your information for other 3rd party marketing in any way.
 
 We may use your information for a number of purposes including the following:
 
-- Compliance with legal, regulatory and corporate governance obligations.
-- To provide you with information about our business and products etc.
+*   Compliance with legal, regulatory and corporate governance obligations.
+*   To provide you with information about our business and products etc.
 
 We will use the information you give us to:
 
-- Any other reasonable purposes of '{{ site.name }}', acting always in accordance with the data protection law (as amended from time to time).
+*   Any other reasonable purposes of '{{ site.name }}', acting always in accordance with the data protection law (as amended from time to time).
 
 ### Marketing
 
@@ -64,8 +65,8 @@ We do not normally share your information with 3rd parties at all.
 
 However, we may disclose your personal information to law enforcement agencies:
 
-- If we are under a duty to disclose your personal data in order to comply with any legal obligation (for example to government bodies and law enforcement agencies) on the production of an appropriate warrant for such data;
-- To protect the rights, property, information or safety of '{{ site.name }}'.
+*   If we are under a duty to disclose your personal data in order to comply with any legal obligation (for example to government bodies and law enforcement agencies) on the production of an appropriate warrant for such data;
+*   To protect the rights, property, information or safety of '{{ site.name }}'.
 
 ### Keeping Your Records
 
@@ -117,12 +118,12 @@ If you are unhappy with our work or something that we have done or failed to do 
 
 All information enquires or complaints should be sent in writing to:-
 
-* **{{ site.name }}**
-* {{ site.address }}
-* {{ site.village }}
-* {{ site.city }}
-* {{ site.county }}
-* {{ site.postcode }}
+*   **{{ site.name }}**
+*   {{ site.address }}
+*   {{ site.village }}
+*   {{ site.city }}
+*   {{ site.county }}
+*   {{ site.postcode }}
 
 ### How secure is this website?
 
