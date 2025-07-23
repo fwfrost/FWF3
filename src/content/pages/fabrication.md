@@ -1,5 +1,6 @@
 ---
 title: Fabrication And Welding
+permalink: /fabrication/
 description: F W Frost Engineers Ltd have the ability and skills to produce
   large and small fabrications and sheet metal parts in Mild and Stainless Steel
   or Aluminium.

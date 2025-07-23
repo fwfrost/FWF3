@@ -1,5 +1,6 @@
 ---
 title: Privacy Policy
+permalink: /privacy-policy/
 description: F.W.Frosts Privacy Policy explains how we collect, use, protect,
   and share your personal data. It details your rights and our commitment to
   your privacy.
@@ -49,14 +50,14 @@ We do not use your information for other 3rd party marketing in any way.
 We may use your information for a number of purposes including the following:
 
 *   Compliance with legal, regulatory and corporate governance obligations.
-    
+
 *   To provide you with information about our business and products etc.
-    
+
 
 We will use the information you give us to:
 
 *   Any other reasonable purposes of '{{ site.name }}', acting always in accordance with the data protection law (as amended from time to time).
-    
+
 
 ## Marketing
 
@@ -69,9 +70,9 @@ We do not normally share your information with 3rd parties at all.
 However, we may disclose your personal information to law enforcement agencies:
 
 *   If we are under a duty to disclose your personal data in order to comply with any legal obligation (for example to government bodies and law enforcement agencies) on the production of an appropriate warrant for such data;
-    
+
 *   To protect the rights, property, information or safety of '{{ site.name }}'.
-    
+
 
 ## Keeping Your Records
 
@@ -124,17 +125,17 @@ If you are unhappy with our work or something that we have done or failed to do 
 All information enquires or complaints should be sent in writing to:-
 
 *   **{{ site.name }}**
-    
+
 *   {{ site.address }}
-    
+
 *   {{ site.village }}
-    
+
 *   {{ site.city }}
-    
+
 *   {{ site.county }}
-    
+
 *   {{ site.postcode }}
-    
+
 
 ## How secure is this website?
 

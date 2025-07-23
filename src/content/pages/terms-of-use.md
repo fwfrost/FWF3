@@ -1,5 +1,6 @@
 ---
 title: Terms Of Use Statement
+permalink: /terms-of-use/
 description: F.W.Frosts Terms of Use explains your expected use of our website
   and the content. If you do not agree with our terms then please do not use our
   website.

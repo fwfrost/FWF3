@@ -1,5 +1,6 @@
 ---
 title: Contact FW Frost Engineers
+permalink: /contact-us/
 description: Contact F.W.Frost Engineers today by phone, email or by our website
   contact form if you have an interest in our machining or
   fabrication  .capabilities
