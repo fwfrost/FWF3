@@ -1,10 +1,10 @@
 ---
 title: Machining
-layout: base
-permalink: /machining/
 description: F.W.Frost Engineers has a comprehensive machine shop including
   manual and cnc milling and turning, which can produce parts in a wide variety
   of materials.
+permalink: /machining/
+layout: default
 keywords:
   - Precision Turning in Norfolk
   - Precision Milling in Norfolk

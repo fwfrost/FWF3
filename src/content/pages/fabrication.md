@@ -1,10 +1,10 @@
 ---
 title: Fabrication And Welding
-layout: base
-permalink: /fabrication/
 description: F W Frost Engineers Ltd have the ability and skills to produce
   large and small fabrications and sheet metal parts in Mild and Stainless Steel
   or Aluminium.
+permalink: /fabrication/
+layout: default
 keywords:
   - Fabrication in Norfolk
   - Welding in Norfolk

@@ -1,10 +1,10 @@
 ---
 title: About FW Frost Engineers
-layout: base
-permalink: /about-us/
 description: FW Frost Engineers was established in 1947 by Fred Frost and
   started trading from premises in Magdalen St, Norwich, before moving to larger
   premises in Oak St
+permalink: /about-us/
+layout: default
 keywords:
   - About FW Frost Engineers
   - History of FW Frost Engineers
