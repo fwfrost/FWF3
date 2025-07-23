@@ -36,7 +36,7 @@ This website contains material which is owned by or licensed to us. This materia
 
 All trademarks reproduced in this website which are not the property of, or licensed to, the operator are acknowledged on the website.
 
-## Useage
+## Usage
 
 Unauthorised use of this website may give rise to a claim for damages and/or be a criminal offence.
 
