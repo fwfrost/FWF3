@@ -115,7 +115,7 @@ content:
       - name: image
         label: Image
         type: image
-      - name: imageAlt
+      - name: alt
         label: Image Alt Text
         type: string
       - name: url
@@ -187,7 +187,7 @@ content:
       - name: image
         label: Image
         type: image
-      - name: imageAlt
+      - name: alt
         label: Image Alt Text
         type: string
       - name: url
