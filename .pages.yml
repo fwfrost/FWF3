@@ -6,7 +6,14 @@ content:
     label: Posts
     type: collection
     path: src/content/posts
-    filename: title
+    filename: "{primary}.md"
+    view:
+      fields: [ title, order ]
+      primary: title
+      sort: [ order, date ]
+      default:
+        sort: order
+        order: asc
     fields:
       - name: title
         label: Title
@@ -26,14 +33,16 @@ content:
           collapsible: false
       - name: tags
         label: Tags
-        type: string
-        list:
-          collapsible: false
+        type: select
+        options:
+          multiple: true
+          values: [Machining, Fabrication, Inspection, Design, Welding, Turning, Milling]
       - name: categories
         label: Categories
-        type: string
-        list:
-          collapsible: false
+        type: select
+        options:
+          multiple: false
+          values: [Machining, Fabrication, Inspection, Design]
       - name: image
         label: Image
         type: image
