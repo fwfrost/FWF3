@@ -2,7 +2,7 @@
 layout: default
 permalink: '/terms-of-use/'
 title: Terms Of Use Statement
-description: "Our Terms of Use explains your expected use of our website and the content. If you do not agree with our terms then please do not use our website."
+description: Our Terms of Use explains your expected use of our website and the content. If you do not agree with our terms then please do not use our website.
 keywords: ['Website Terms Of Use', 'Website Terms Of Use statement', 'Terms Of Use statement', 'Terms Of Use policy']
 bkgdimage: /assets/images/machined_and_assembled_components.jpg
 ---

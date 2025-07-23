@@ -2,7 +2,7 @@
 layout: default
 permalink: '/privacy-policy/'
 title: Privacy Policy
-description: "Our policies are important to us and help you understand and define how we operate. We have policies to cover accessibility, cookies and privacy."
+description: Our policies are important to us and help you understand and define how we operate. We have policies to cover accessibility, cookies and privacy.
 keywords: ['Privacy Policy', 'Privacy']
 bkgdimage: /assets/images/machined-stainless-plate.jpg
 ---

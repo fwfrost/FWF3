@@ -2,7 +2,7 @@
 layout: machining
 permalink: /machining/
 title: CNC Machining in Steel Aluminium or Plastic
-description: "F W Frost Engineers Ltd has a comprehensive machine shop including milling and turning, which can produce parts in Mild and Stainless Steel, Brass, Aluminium or Plastics."
+description: F W Frost Engineers Ltd has a comprehensive machine shop including milling and turning, which can produce parts in Mild and Stainless Steel, Brass, Aluminium or Plastics.
 keywords: ['Precision Turning in Norfolk', 'Precision Milling in Norfolk', 'Precision Machining in Norfolk', 'Horizontal Boring In Norfolk', 'Large Capacity Machining in Norfolk']
 bkgdimage: /assets/images/machined-stainless-plate.jpg
 ---

@@ -2,7 +2,7 @@
 layout: contact
 permalink: /contact-us/
 title: Contact Us
-description: "Contact us today by phone, email or by our website contact form."
+description: Contact us today by phone, email or by our website contact form.
 keywords: ['Contact FW Frost Engineers', 'Phone FW Frost Engineers', 'Email FW Frost Engineers']
 bkgdimage: /assets/images/machined_and_assembled_components.jpg
 pageType: contact

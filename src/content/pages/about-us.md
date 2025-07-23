@@ -2,7 +2,7 @@
 layout: default
 permalink: /about-us/
 title: About Us
-description: "FW Frost Engineers was established in 1947 by Fred Frost and started trading from premises in Magdalen St, Norwich, before moving to larger premises in Oak St"
+description: FW Frost Engineers was established in 1947 by Fred Frost and started trading from premises in Magdalen St, Norwich, before moving to larger premises in Oak St
 keywords: ['About FW Frost Engineers', 'History of FW Frost Engineers']
 bkgdimage: /assets/images/machined-stainless-plate.jpg
 ---
