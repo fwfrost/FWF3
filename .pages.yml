@@ -35,6 +35,7 @@ content:
         label: Tags
         type: select
         options:
+          creatable: true
           multiple: true
           values: [Machining, Fabrication, Inspection, Design, Welding, Turning, Milling]
       - name: categories
@@ -242,12 +243,18 @@ content:
       - name: permalink
         label: Permalink
         type: string
-        hidden: true
         default: '/{fields.title | slugify}/'
       - name: layout
         label: Layout
-        type: string
-        hidden: true
+        type: select
+        options:
+          values:
+            - value: base
+              label: Base
+            - value: default
+              label: Default
+            - value: alice
+              label: Alice Brown
         default: 'base'
       - name: keywords
         label: Keywords
