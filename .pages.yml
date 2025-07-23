@@ -266,7 +266,7 @@ content:
         type: image
         options:
           multiple: false
-          path: header-images
+          path: /assets/images/header-images
           extensions: [jpg, png]
       - name: body
         label: Body
