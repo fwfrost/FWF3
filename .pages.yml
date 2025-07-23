@@ -249,6 +249,8 @@ content:
         type: image
         options:
           multiple: false
+          path: header-images
+          extensions: [jpg, png]
       - name: body
         label: Body
         type: rich-text
