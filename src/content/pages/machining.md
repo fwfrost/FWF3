@@ -13,7 +13,7 @@ bkgdimage: assets/images/header-images/machined-stainless-plate.jpg
 ---
 ## Machining
 
-FW Frost has continually invested in the latest CNC/CAD/CAM technologies, the latest purchase being a Haas EC2000 machining centre and Colchester Multiturn 1400 lathe.
+FW Frost has continually invested in the latest CNC/CAD/CAM technologies, the latest purchase being a Haas VF9 machining centre and Harrison 1400XS lathe.
 
 Thanks to this consistent investment in state-of-the-art technology, our CNC machining service also allows for fast changeovers between projects. This means we can consistently meet your project deadlines, delivering high quality machined components on time.
 
