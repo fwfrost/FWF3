@@ -221,7 +221,7 @@ content:
     label: Pages
     type: collection
     path: src/content/pages
-    filename: "{primary}.md"
+    filename: '{fields.primary | slugify}.md'
     view:
       fields: [ title, order ]
       primary: title
