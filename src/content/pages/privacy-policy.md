@@ -49,11 +49,14 @@ We do not use your information for other 3rd party marketing in any way.
 We may use your information for a number of purposes including the following:
 
 *   Compliance with legal, regulatory and corporate governance obligations.
+    
 *   To provide you with information about our business and products etc.
+    
 
 We will use the information you give us to:
 
 *   Any other reasonable purposes of '{{ site.name }}', acting always in accordance with the data protection law (as amended from time to time).
+    
 
 ### Marketing
 
@@ -66,7 +69,9 @@ We do not normally share your information with 3rd parties at all.
 However, we may disclose your personal information to law enforcement agencies:
 
 *   If we are under a duty to disclose your personal data in order to comply with any legal obligation (for example to government bodies and law enforcement agencies) on the production of an appropriate warrant for such data;
+    
 *   To protect the rights, property, information or safety of '{{ site.name }}'.
+    
 
 ### Keeping Your Records
 
@@ -119,12 +124,20 @@ If you are unhappy with our work or something that we have done or failed to do 
 All information enquires or complaints should be sent in writing to:-
 
 *   **{{ site.name }}**
+    
 *   {{ site.address }}
+    
 *   {{ site.village }}
+    
 *   {{ site.city }}
+    
 *   {{ site.county }}
+    
 *   {{ site.postcode }}
+    
 
 ### How secure is this website?
 
 This website transmits itself using HTTPS, encrypting all data between the browser and the server. Your network provider can still see that you are downloading assets from this site, but not its content. This also protects you from third parties intercepting data, for example, while browsing on public WiFi, or from network providers injecting advertisements on this site. All relevant response HTTP headers are set for your protection and the Content Security Policy is adjusted to this websites requirements.
+
+Last Updated 23/07/2025
