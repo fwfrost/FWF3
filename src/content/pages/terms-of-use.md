@@ -10,7 +10,7 @@ keywords:
   - Terms Of Use policy
 bkgdimage: assets/images/header-images/machined-component-with-threaded-inserts.jpg
 ---
-Welcome to our website. If you continue to browse and use this website, you are agreeing to comply with and be bound by the following terms and conditions of use, which together with our privacy policy govern the '{{ site.name }}' relationship with you in relation to this website. If you disagree with any part of these terms and conditions, please do not use our website.
+Welcome to our website. If you continue to browse and use this website, you are agreeing to comply with and be bound by the following terms and conditions of use, which together with our privacy policy govern the '{{ site.name }}' relationship with you in relation to this website. If you disagree with any part of these terms of use, please do not use our website.
 
 '{{ site.name }}' is committed to providing a website that is accessible to the widest possible audience, regardless of technology or ability. We are actively working to increase the accessibility and usability of our website and in doing so adhere to many of the available standards and guidelines.
 
