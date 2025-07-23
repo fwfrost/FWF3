@@ -32,9 +32,15 @@ Your use of any information or materials on this website is entirely at your own
 
 This website contains material which is owned by or licensed to us. This material includes, but is not limited to, the design, layout, look, appearance and graphics. Reproduction is prohibited other than in accordance with the copyright notice, which forms part of these terms and conditions.
 
+## Trademarks
+
 All trademarks reproduced in this website which are not the property of, or licensed to, the operator are acknowledged on the website.
 
+## Useage
+
 Unauthorised use of this website may give rise to a claim for damages and/or be a criminal offence.
+
+## External Links
 
 From time to time this website may also include links to other websites. These links are provided for your convenience to provide further information. They do not signify that we endorse the website(s). We have no responsibility for the content of the linked website(s).
 
