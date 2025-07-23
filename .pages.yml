@@ -1,42 +1,40 @@
 media:
   input: src/assets/images
   output: assets/images
-
-
 content:
   - name: posts
     label: Posts
     type: collection
     path:: src/content/posts
     fields:
-      - label: Title
-        name: title
+      - name: title
+        label: Title
         type: string
-      - label: Description
-        name: summary
+      - name: summary
+        label: Description
         type: string
-      - label: Date
-        name: date
+      - name: date
+        label: Date
         type: datetime
         default: false
         format: YYYY-MM-DDTHH:mm:ssZ
-      - label: Keywords
-        name: keywords
+      - name: keywords
+        label: Keywords
         type: list
-      - label: Tags
-        name: tags
+      - name: tags
+        label: Tags
         type: list
-      - label: Categories
-        name: categories
+      - name: categories
+        label: Categories
         type: list
-      - label: Image
-        name: image
+      - name: image
+        label: Image
         type: image
-      - label: Image Alt
-        name: imageAlt
+      - name: imageAlt
+        label: Image Alt Text
         type: string
-      - label: Body
-        name: body
+      - name: body
+        label: Main Body Text
         type: rich-text
 
   - name: vacancies
@@ -44,11 +42,11 @@ content:
     type: collection
     path:: src/content/vacancies/
     fields:
-      - label: Title
-        name: title
+      - name: title
+        label: Title
         type: string
-      - label: Body
-        name: body
+      - name: body
+        label: Main Body Text
         type: rich-text
 
   - name: fab-blocks
@@ -56,14 +54,14 @@ content:
     type: collection
     path:: src/content/fab-blocks
     fields:
-      - label: Title
-        name: title
+      - name: title
+        label: Title
         type: string
-      - label: Icon
-        name: icon
+      - name: icon
+        label: Icon
         type: string
-      - label: Body
-        name: body
+      - name: body
+        label: Main Body Text
         type: rich-text
 
   - name: fab-links
@@ -71,17 +69,17 @@ content:
     type: collection
     path:: src/content/fab-links
     fields:
-      - label: Title
-        name: title
+      - name: title
+        label: Title
         type: string
-      - label: Image
-        name: image
+      - name: image
+        label: Image
         type: image
-      - label: Image Alt
-        name: imageAlt
+      - name: imageAlt
+        label: Image Alt Text
         type: string
-      - label: Url
-        name: url
+      - name: url
+        label: Url
         type: string
 
   - name: fab-images
@@ -89,14 +87,14 @@ content:
     type: collection
     path:: src/content/fab-images
     fields:
-      - label: Title
-        name: title
+      - name: title
+        label: Title
         type: string
-      - label: Image
-        name: image
+      - name: image
+        label: Image
         type: image
-      - label: Image Alt
-        name: imageAlt
+      - name: imageAlt
+        label: Image Alt Text
         type: string
 
   - name: machine-blocks
@@ -104,14 +102,14 @@ content:
     type: collection
     path:: src/content/machine-blocks
     fields:
-      - label: Title
-        name: title
+      - name: title
+        label: Title
         type: string
-      - label: Icon
-        name: icon
+      - name: icon
+        label: Icon
         type: string
-      - label: Body
-        name: body
+      - name: body
+        label: Main Body Text
         type: rich-text
 
   - name: machine-links
@@ -119,17 +117,17 @@ content:
     type: collection
     path:: src/content/machine-links
     fields:
-      - label: Title
-        name: title
+      - name: title
+        label: Title
         type: string
-      - label: Image
-        name: image
+      - name: image
+        label: Image
         type: image
-      - label: Image Alt
-        name: imageAlt
+      - name: imageAlt
+        label: Image Alt Text
         type: string
-      - label: Url
-        name: url
+      - name: url
+        label: Url
         type: string
 
   - name: machine-images
@@ -137,14 +135,14 @@ content:
     type: collection
     path:: src/content/machine-images
     fields:
-      - label: Title
-        name: title
+      - name: title
+        label: Title
         type: string
-      - label: Image
-        name: image
+      - name: image
+        label: Image
         type: image
-      - label: Image Alt
-        name: imageAlt
+      - name: imageAlt
+        label: Image Alt Text
         type: string
 
   - name: pages
@@ -152,26 +150,26 @@ content:
     type: collection
     path:: src/content/pages
     fields:
-      - label: Title
-        name: title
+      - name: title
+        label: Title
         type: string
-      - label: Description
-        name: summary
+      - name: summary
+        label: Description
         type: string
-      - label: Keywords
-        name: keywords
+      - name: keywords
+        label: Keywords
         type: string
         list:
           collapsible: false
-      - label: Layout
-        name: layout
+      - name: layout
+        label: Layout
         type: string
-      - label: Permalink
-        name: permalink
+      - name: permalink
+        label: Permalink
         type: string
-      - label: Background Image
-        name: bkgdimage
+      - name: bkgdimage
+        label: Background Image
         type: image
-      - label: Body
-        name: body
+      - name: body
+        label: Body
         type: rich-text
