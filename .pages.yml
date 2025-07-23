@@ -221,7 +221,7 @@ content:
     label: Pages
     type: collection
     path: src/content/pages
-    filename: '{fields.primary | slugify}.md'
+    filename: '{fields.title | slugify}.md'
     view:
       fields: [ title, order ]
       primary: title
@@ -239,6 +239,11 @@ content:
         options:
           minlength: 150
           maxlength: 160
+      - name: permalink
+        label: Permalink
+        type: string
+        hidden: true
+        default: '{fields.title | slugify}'
       - name: keywords
         label: Keywords
         type: string
