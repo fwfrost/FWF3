@@ -244,6 +244,11 @@ content:
         type: string
         hidden: true
         default: '/{fields.title | slugify}/'
+      - name: layout
+        label: Layout
+        type: string
+        hidden: true
+        default: 'base'
       - name: keywords
         label: Keywords
         type: string

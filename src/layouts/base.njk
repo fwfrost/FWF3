@@ -20,7 +20,9 @@
   {%- endif -%}
 
   <main id="main" data-pagefind-body>
+    <section class="m--wrapper">
     {{ content | safe }}
+    </section>
   </main>
 
   {%- include "partials/main/footer.njk" -%}
