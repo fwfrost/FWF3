@@ -1,5 +1,6 @@
 ---
 title: Privacy Policy
+layout: base
 permalink: /privacy-policy/
 description: F.W.Frosts Privacy Policy explains how we collect, use, protect,
   and share your personal data. It details your rights and our commitment to

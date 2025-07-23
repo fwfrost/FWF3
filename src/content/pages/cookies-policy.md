@@ -1,5 +1,6 @@
 ---
 title: Cookies Policy
+layout: base
 permalink: /cookies-policy/
 description: F.W.Frosts current Cookies Policy explains what cookies are, how we
   use them, and your choices regarding our use of them. We detail third-party
