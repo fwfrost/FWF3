@@ -5,7 +5,8 @@ content:
   - name: posts
     label: Posts
     type: collection
-    path:: src/content/posts
+    path: src/content/posts
+    filename: title
     fields:
       - name: title
         label: Title
@@ -40,7 +41,8 @@ content:
   - name: vacancies
     label: Vacancies
     type: collection
-    path:: src/content/vacancies/
+    path: src/content/vacancies
+    filename: title
     fields:
       - name: title
         label: Title
@@ -52,7 +54,8 @@ content:
   - name: fab-blocks
     label: Fabrication Page Blocks
     type: collection
-    path:: src/content/fab-blocks
+    path: src/content/fab-blocks
+    filename: title
     fields:
       - name: title
         label: Title
@@ -67,7 +70,8 @@ content:
   - name: fab-links
     label: Fabrication Page Links
     type: collection
-    path:: src/content/fab-links
+    path: src/content/fab-links
+    filename: title
     fields:
       - name: title
         label: Title
@@ -85,7 +89,8 @@ content:
   - name: fab-images
     label: Fabrication Page Images
     type: collection
-    path:: src/content/fab-images
+    path: src/content/fab-images
+    filename: title
     fields:
       - name: title
         label: Title
@@ -100,7 +105,8 @@ content:
   - name: machine-blocks
     label: Machining Page Blocks
     type: collection
-    path:: src/content/machine-blocks
+    path: src/content/machine-blocks
+    filename: title
     fields:
       - name: title
         label: Title
@@ -115,7 +121,8 @@ content:
   - name: machine-links
     label: Machining Page Links
     type: collection
-    path:: src/content/machine-links
+    path: src/content/machine-links
+    filename: title
     fields:
       - name: title
         label: Title
@@ -133,7 +140,8 @@ content:
   - name: machine-images
     label: Machining Page Images
     type: collection
-    path:: src/content/machine-images
+    path: src/content/machine-images
+    filename: title
     fields:
       - name: title
         label: Title
@@ -148,7 +156,8 @@ content:
   - name: pages
     label: Page
     type: collection
-    path:: src/content/pages
+    path: src/content/pages
+    filename: title
     fields:
       - name: title
         label: Title
