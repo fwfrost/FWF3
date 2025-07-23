@@ -253,8 +253,8 @@ content:
               label: Base
             - value: default
               label: Default
-            - value: alice
-              label: Alice Brown
+            - value: contact
+              label: Contact
         default: 'base'
       - name: keywords
         label: Keywords
