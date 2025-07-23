@@ -1,5 +1,5 @@
 ---
-title: CNC Machining in Steel Aluminium or Plastic
+title: Machining
 description: F.W.Frost Engineers has a comprehensive machine shop including
   manual and cnc milling and turning, which can produce parts in a wide variety
   of materials.
