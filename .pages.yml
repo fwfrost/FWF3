@@ -237,8 +237,8 @@ content:
         label: Description
         type: string
         options:
-          minlength: 120
-          maxlength: 150
+          minlength: 150
+          maxlength: 160
       - name: keywords
         label: Keywords
         type: string
