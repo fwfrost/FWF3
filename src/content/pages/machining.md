@@ -23,10 +23,10 @@ Our highly skilled machine shop has the ability to produce both large and small 
 
 Both our Scharmann Horizontal Boring machines have a five-tonne table capacity and can machine parts larger than most workshops.
 
-### CAD/CAM
+## CAD/CAM
 
 We are able to generate machining programs from customers 3D Models using our ONECNC Software, this ensures parts are accurate to the clients model and drawings.
 
-### Inspection
+## Inspection
 
 Having invested in both a Faro Gage and Axiom too 1200 CMM in recent years has allowed FW Frost to improve upon and replace multiple manual inspection tools, these have delivered added convenience, speed, and accuracy.
