@@ -1,22 +1,22 @@
 ---
-permalink: /cookies-policy/
-layout: default
 title: Cookies Policy
 description: F.W.Frosts current Cookies Policy explains what cookies are, how we
   use them, and your choices regarding our use of them. We detail third-party
   use, too.
+permalink: /cookies-policy/
+layout: default
 keywords:
   - Cookies Policy
   - Cookies
 bkgdimage: assets/images/header-images/galvanised_access_cover.jpg
 ---
-This Cookies Policy explains how { site.name } ("we," "us," or "our") uses cookies and similar technologies when you visit our website, { site.url } (the "Website"). It also explains what these technologies are, why we use them, and your rights to control our use of them.
+This Cookies Policy explains how {{ site.name }} ("we," "us," or "our") uses cookies and similar technologies when you visit our website, {{ site.url }} (the "Website"). It also explains what these technologies are, why we use them, and your rights to control our use of them.
 
 ## What are Cookies?
 
 Cookies are small data files that are placed on your computer or mobile device when you visit a website. Cookies are widely used by website owners to make their websites work, or to work more efficiently, as well as to provide reporting information.
 
-Cookies set by the website owner (in this case, { site.name }) are called "first-party cookies." Cookies set by parties other than the website owner are called "third-party cookies." Third-party cookies enable third-party features or functionality to be provided on or through the website (e.g., advertising, interactive content, and analytics). The parties that set these third-party cookies can recognise your computer both when it visits the website in question and also when it visits certain other websites.
+Cookies set by the website owner (in this case, {{ site.name }}) are called "first-party cookies." Cookies set by parties other than the website owner are called "third-party cookies." Third-party cookies enable third-party features or functionality to be provided on or through the website (e.g., advertising, interactive content, and analytics). The parties that set these third-party cookies can recognise your computer both when it visits the website in question and also when it visits certain other websites.
 
 ## Why do we use Cookies?
 
@@ -27,15 +27,15 @@ We use first-party and third-party cookies for several reasons. Some cookies are
 The specific types of first-party and third-party cookies served through our Website and the purposes they perform are described below:
 
 *   **Strictly Necessary Cookies:** These cookies are essential to provide you with services available through our Website and to enable you to use some of its features, such as accessing secure areas. Without these cookies, services like shopping carts or e-billing cannot be provided.
-
+    
 *   **Performance and Functionality Cookies:** These cookies are used to enhance the performance and functionality of our Website but are non-essential to their use. However, without these cookies, certain functionality (like remembering your preferences) may become unavailable.
-
+    
 *   **Analytics and Customisation Cookies:** These cookies collect information that is used either in aggregate form to help us understand how our Website is being used or how effective our marketing campaigns are, or to help us customise our Website for you.
-
+    
 *   **Advertising Cookies:** These cookies are used to make advertising messages more relevant to you and your interests. They perform functions like preventing the same ad from continuously reappearing, ensuring that ads are properly displayed for advertisers, and in some cases selecting advertisements that are based on your interests.
-
+    
 *   **Social Networking Cookies:** These cookies are used to enable you to share pages and content that you find interesting on our Website through third-party social networking and other websites. These cookies may also be used for advertising purposes.
-
+    
 
 ## How can I control Cookies?
 
@@ -52,9 +52,9 @@ You can also typically set your browser to remove or reject browser cookies. To 
 Many advertising networks offer you a way to opt out of targeted advertising. If you would like to find out more information, please visit:
 
 *   [Digital Advertising Alliance](http://www.aboutads.info/choices/)
-
+    
 *   [YourOnlineChoices](http://www.youronlinechoices.com/)
-
+    
 
 ## Changes to Our Cookies Policy
 
@@ -67,16 +67,16 @@ The date at the end of this Cookies Policy indicates when it was last updated.
 If you have any questions about our use of cookies or other technologies, please email us at \[Your Contact Email Address\] or write to us at:
 
 *   **{{ site.name }}**
-
+    
 *   {{ site.address }}
-
+    
 *   {{ site.village }}
-
+    
 *   {{ site.city }}
-
+    
 *   {{ site.county }}
-
+    
 *   {{ site.postcode }}
-
+    
 
 Last Updated 23/07/2025
