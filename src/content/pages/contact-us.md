@@ -1,13 +1,14 @@
 ---
-layout: contact
-permalink: /contact-us/
 title: Contact Us
-description: Contact us today by phone, email or by our website contact form.
-keywords: ['Contact FW Frost Engineers', 'Phone FW Frost Engineers', 'Email FW Frost Engineers']
-bkgdimage: /assets/images/machined_and_assembled_components.jpg
-pageType: contact
+description: Contact F.W.Frost Engineers today by phone, email or by our website
+  contact form if you have an interest in our machining or
+  fabrication  .capabilities
+keywords:
+  - Contact FW Frost Engineers
+  - Phone FW Frost Engineers
+  - Email FW Frost Engineers
+bkgdimage: assets/images/header-images/machined_and_assembled_components.jpg
 ---
-
 ## Get In Touch...
 
 We’d love to hear from you. Whether you have a project in mind or need expert advice, our team is here to help.
