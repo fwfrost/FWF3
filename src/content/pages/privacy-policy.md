@@ -58,6 +58,7 @@ We may use your information for a number of purposes including the following:
 We will use the information you give us to:
 
 *   Any other reasonable purposes of '{{ site.name }}', acting always in accordance with the data protection law (as amended from time to time).
+    
 
 ## Marketing
 
@@ -141,4 +142,4 @@ All information enquires or complaints should be sent in writing to:-
 
 This website transmits itself using HTTPS, encrypting all data between the browser and the server. Your network provider can still see that you are downloading assets from this site, but not its content. This also protects you from third parties intercepting data, for example, while browsing on public WiFi, or from network providers injecting advertisements on this site. All relevant response HTTP headers are set for your protection and the Content Security Policy is adjusted to this websites requirements.
 
-Last Updated 23/07/2025
+Last Updated: 23/07/2025
