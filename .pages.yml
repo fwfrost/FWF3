@@ -244,6 +244,7 @@ content:
         label: Permalink
         type: string
         default: '/{fields.title | slugify}/'
+        editable: false
       - name: layout
         label: Layout
         type: select
@@ -254,12 +255,24 @@ content:
             - value: default
               label: Default
             - value: contact
-              label: contact
+              label: Contact
             - value: fabrication
               label: Fabrication
             - value: machining
               label: Machining
         default: 'base'
+      - name: pageType
+        label: Page Type
+        type: select
+        options:
+          values:
+            - value: contact
+              label: Contact
+            - value: home
+              label: Home
+            - value: none
+              label: None
+        default: 'none'
       - name: keywords
         label: Keywords
         type: string

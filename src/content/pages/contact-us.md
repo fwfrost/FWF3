@@ -5,6 +5,7 @@ description: Contact F.W.Frost Engineers today by phone, email or by our website
   fabrication  .capabilities
 permalink: /contact-us/
 layout: contact
+pageType: contact
 keywords:
   - Contact FW Frost Engineers
   - Phone FW Frost Engineers
