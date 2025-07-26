@@ -12,6 +12,7 @@ tags:
   - Fixture
 categories: Design
 imageAlt: A Bespoke Turnover Fixture made in Norfolk
+image: _site/assets/images/turnover_fixture-1.jpg
 ---
 ## In-House Design Using Solidworks
 
