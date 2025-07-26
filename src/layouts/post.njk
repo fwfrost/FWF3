@@ -21,8 +21,8 @@ pageType: blog
     {% endif %}
     <li class="is--meta">Category:</li>
     {% for category in categories %}
-    <li><a class="is--meta" href="/categories/{{ category | slug }}/">{{ category | title }}</a></li>
-    {% endfor %}
+    <li><a class="is--meta" href="/categories/{{ category | slugify }}/">{{ category | title }}</a></li>
+    {%- endfor -%}
   </ul>
   {{ content | safe }}
   <a class="button" aria-label="back to the news listing page" href="/news/">{% icon "fas:caret-left" %}All Posts</a>

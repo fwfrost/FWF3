@@ -11,7 +11,7 @@ keywords:
 tags:
   - Inspection
   - CMM
-categories: Inspection
+categories: ['Inspection']
 image: /assets/images/axiom-too-cmm-1.jpg
 imageAlt: Axiom Too CMM
 ---

@@ -11,7 +11,7 @@ tags:
   - Machining
   - Meehanite
   - Castings
-categories: Machining
+categories: ['Machining']
 image: /assets/images/machining-meehanite-casting-1.jpg
 imageAlt: Machining of Meehanite Casting in UK
 ---

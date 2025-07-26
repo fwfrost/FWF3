@@ -10,7 +10,7 @@ keywords:
 tags:
   - Design
   - Fixture
-categories: Design
+categories: ['Design']
 image: /assets/images/turnover_fixture-1.jpg
 imageAlt: A Bespoke Turnover Fixture made in Norfolk
 ---
