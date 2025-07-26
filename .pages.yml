@@ -25,7 +25,9 @@ content:
         label: Date
         type: date
         default: false
-        format: YYYY-MM-DDTHH:mm:ssZ
+        options:
+          time: true
+          format: yyyy-MM-dd'T'HH:mm:ss
       - name: keywords
         label: Keywords
         type: string
