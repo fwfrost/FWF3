@@ -101,6 +101,7 @@ export default {
     return collection.getFilteredByTags('machineBlocks');
   },
 
+
   // 	------ Create blog categories collection -------
   categoryList: collection => {
     let allCategories = getAllKeyValues(

@@ -6,7 +6,7 @@ pageType: blog
 {% set postListItems = pagination.items %}
 
 {%- if tag -%}
-  {% set postListItems = collections[tag] %}
+  {% set postListItems = collections[tag] %} 
 {%- endif -%}
 
 {%- if category -%}

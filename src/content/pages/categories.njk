@@ -1,5 +1,5 @@
 ---
-layout: feed
+layout: base
 pagination:
   data: collections.categoryList
   size: 1
@@ -17,5 +17,34 @@ sitemap: {
   priority: '0.5'
 }
 keywords: ['Categories', 'Category', 'Blog', 'Posts', 'Articles']
-bkgdimage: assets/images/machined-stainless-plate.jpg
+bkgdimage: assets/images/header-images/machined-stainless-plate.jpg
 ---
+
+{% block content %}
+
+<section class="l--wrapper markdown--block">
+  <aside>
+    {%- include "partials/micro/cat-tags.njk" -%}
+  </aside>
+  <div>
+    <h1>{{ title }}</h1>
+    <h2 class="visually--hidden">This collection of articles all relate to {{ category.slug }} topic.</h2>
+
+  {% set posts = collections.releasedPosts | include("data.categories", category.title) %}
+  <div>
+  {% for item in posts %}
+  <div class="post--list--block | flow">
+    <h2>
+      <a href="{{ item.url }}" rel="bookmark">{{ item.data.title }}</a>
+    </h2>
+    <div>
+    <p class="is--meta">Author: {{ site.authorName }}</p>
+    <p class="is--meta">Published: <time datetime="{{ item.date | dateToFormat }}">{{ item.date | dateToFormat }}</time></p>
+    </div>
+    {{ item.content | safe | truncate(200, true) }}
+  </div>
+  {% endfor %}
+
+</div><a class="button" aria-label="back to the news listing page" href="/news/">{% icon "fas:caret-left" %}All Posts</a>
+</section>
+{% endblock %}
