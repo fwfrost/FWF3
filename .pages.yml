@@ -44,6 +44,7 @@ content:
         label: Categories
         type: select
         options:
+          creatable: true
           multiple: false
           values: [Machining, Fabrication, Inspection, Design]
       - name: image
