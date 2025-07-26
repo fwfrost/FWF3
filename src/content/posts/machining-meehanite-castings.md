@@ -12,7 +12,7 @@ tags:
   - Meehanite
   - Castings
 categories: ['Machining']
-image: assets/images/machining-meehanite-casting-1.jpg
+image: 
 imageAlt: Machining of Meehanite Casting in UK
 ---
 ## Mastering the Machining of Very Hard Meehanite WA Castings
