@@ -1,6 +1,6 @@
 ---
 title: Machining Meehanite WA Castings
-date: 2024-09-06 15:29:00
+date: 2024-09-06T15:29:00
 description: 'At F W Frost, we recently undertook the challenging task of machining very hard Meehanite WA castings.'
 keywords: ['Meehanite WA Castings', 'Machining Meehanite WA Castings', 'challenges of Machining Meehanite']
 tags: ['Machining', 'Meehanite', 'Castings']

@@ -1,6 +1,6 @@
 ---
 title: Turning Assembly Fixture
-date: 2018-02-21 15:29:00
+date: 2018-02-21T15:29:00
 description: 'The F W Frost Engineering in-house design team were once again able to help a client with tricky problem to solve.'
 keywords: ['In-House Design', 'F W Frost In-House Design', 'In-House Design Engineering in Norfolk']
 tags: ['Design', 'Fixture']

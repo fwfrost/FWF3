@@ -1,6 +1,6 @@
 ---
 title: New Axiom too 1200 CMM
-date: 2024-03-02 15:29:00
+date: 2024-03-02T15:29:00
 description: 'We are pleased to announce that we have a new asset in our inspection department. The Aberlink Axiom too 1200 CMM joins our engineering fleet here at F W Frost Engineering.'
 keywords: ['New Axiom too 1200 CMM', 'F W Frost Inspection Department', 'Subcontract Engineering in Norfolk']
 tags: ['Inspection', 'CMM']

@@ -1,6 +1,6 @@
 ---
 title: Haas VF4 SS
-date: 2024-02-09 15:29:00
+date: 2024-02-09T15:29:00
 description: 'We are pleased to announce that we have a new asset in our machining department. The Haas VF4SS joins our engineering fleet here at F W Frost Engineering.'
 keywords: ['Added Milling Capacity', 'F W Frost Machining Department', 'Subcontract Engineering in Norfolk']
 tags: ['Machining', 'Haas']
