@@ -5,7 +5,7 @@ bkgdimage: assets/images/machined_and_assembled_components.jpg
 ---
 
 <article class="m--wrapper | post--block">
-  <img src="{{ image }}" alt="{{ alt }}">
+  <img src="/{{ image }}" alt="{{ alt }}">
   <ul class="inline--list">
     <li class="is--meta">Author: {{ site.authorName }} - </li>
     <li class="is--meta">Published:{% if date %} <time datetime="{{ date | dateFeed }}">{{ date | dateToFormat }}</time>
