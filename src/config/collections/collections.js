@@ -104,15 +104,22 @@ export default {
 
   // 	------ Create blog categories collection -------
   categoryList: collection => {
-    let allCategories = getAllKeyValues(
-      collection.getFilteredByGlob('./src/content/posts/**/*.md'),
-      'categories'
-    );
-    let categories = allCategories.map(category => ({
+    let allPosts = collection.getFilteredByGlob('./src/content/posts/**/*.md');
+    let categoriesSet = new Set(); // Use a Set to store unique categories
+
+    allPosts.forEach(post => {
+      if (post.data.categories) {
+        categoriesSet.add(post.data.categories); // Add the single category string
+      }
+    });
+
+    // Convert Set back to an array of objects for your Nunjucks loop
+    let categories = Array.from(categoriesSet).map(category => ({
       title: category,
       slug: strToSlug(category)
     }));
-    return categories.sort();
+
+    return categories.sort((a, b) => a.title.localeCompare(b.title)); // Sort alphabetically by title
   },
 
   // 	------ Create blog tags collection -------
