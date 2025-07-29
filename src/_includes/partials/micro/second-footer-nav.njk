@@ -1,6 +1,6 @@
 {%- if navigation.secondnav -%}
 <ul>
-  <li><a target="blank" aria-label="for admin to CMS" href="/admin/">Admin</a></li>
+  <li><a target="blank" aria-label="for admin to CMS" href="https://pagescms.org/">Admin</a></li>
   {%- for item in navigation.secondnav -%}{% set externalAttribute = '' %}{% set currentAttribute = '' %}
   {%- if item.external -%}{% set externalAttribute = ' rel="external"' %}{%- endif -%}
   {%- if page.url == item.url -%}{% set currentAttribute = ' aria-current="page"' %}{%- endif -%}
