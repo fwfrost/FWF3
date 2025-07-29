@@ -291,7 +291,3 @@ content:
         label: Body
         type: rich-text
 
-settings:
-  hide: true
-  content:
-    merge: true
