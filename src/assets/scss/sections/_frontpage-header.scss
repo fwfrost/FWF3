@@ -64,7 +64,11 @@
 @include respond-to(sm) {
   .frontpage--header {
     .container {
-    padding: 2rem;
+      padding: 2rem;
+
+      h1 {
+        max-width: 900px;
+      }
     }
   }
 }
@@ -73,6 +77,10 @@
   .frontpage--header {
     .container {
       padding: 4rem;
+
+      h1 {
+        max-width: 980px;
       }
+    }
   }
 }

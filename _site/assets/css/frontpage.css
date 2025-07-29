@@ -83,10 +83,16 @@
   .frontpage--header .container {
     padding: 2rem;
   }
+  .frontpage--header .container h1 {
+    max-width: 900px;
+  }
 }
 @media (min-width: 1023px) {
   .frontpage--header .container {
     padding: 4rem;
+  }
+  .frontpage--header .container h1 {
+    max-width: 980px;
   }
 }
 
