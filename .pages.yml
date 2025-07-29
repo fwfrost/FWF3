@@ -1,6 +1,6 @@
 media:
   input: src/assets/images
-  output: /assets/images
+  output: ../../assets/images
 content:
   - name: posts
     label: Posts
@@ -8,7 +8,7 @@ content:
     path: src/content/posts
     filename: "{primary}.md"
     view:
-      fields: [ title, order ]
+      fields: [ title, date ]
       primary: title
       sort: [ title, date ]
       default:
