@@ -11,10 +11,9 @@ keywords:
 tags:
   - Machining
   - Haas
-categories:
-  - Machining
+categories: Machining
 imageAlt: Haas VF4 Milling Machine
-image: assets/images/haas-vf4-1.jpg
+image: ../../assets/images/haas-vf4.jpg
 ---
 ## Added Milling Capacity
 
