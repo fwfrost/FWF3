@@ -13,6 +13,7 @@ tags:
   - CMM
 categories: Inspection
 imageAlt: Axiom Too CMM
+image: ../../assets/images/axiom-too-cmm.jpg
 ---
 ## New Axiom too 1200 CMM
 
