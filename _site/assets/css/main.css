@@ -1511,8 +1511,8 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 :root {
   --default-screen: 1080;
   --header-text: clamp(48px, calc((48 / (var(--default-screen) / 100)) * 1vw), 60px);
-  --heading-h1: clamp(32px, calc((32 / (var(--default-screen) / 100)) * 1vw), 48px);
-  --heading-h2: clamp(30px, calc((30 / (var(--default-screen) / 100)) * 1vw), 38px);
+  --heading-h1: clamp(48px, calc((48 / (var(--default-screen) / 100)) * 1vw), 76px);
+  --heading-h2: clamp(30px, calc((30 / (var(--default-screen) / 100)) * 1vw), 40px);
   --heading-h3: clamp(26px, calc((28 / (var(--default-screen) / 100)) * 1vw), 32px);
   --heading-h4: clamp(22px, calc((24 / (var(--default-screen) / 100)) * 1vw), 28px);
   --heading-h5: clamp(20px, calc((20 / (var(--default-screen) / 100)) * 1vw), 24px);
@@ -3317,7 +3317,7 @@ header .inner--header {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(39, 62, 84, 0.65);
+  background-color: rgba(39, 62, 84, 0.5);
   color: var(--f-color-inv);
   display: grid;
   place-content: center;
