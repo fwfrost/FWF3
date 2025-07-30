@@ -249,6 +249,8 @@ content:
       - name: keywords
         label: Keywords (Multiple Allowed)
         type: string
+        list:
+          collapsible: false
       - name: permalink
         label: Permalink (Don't Edit)
         type: string
