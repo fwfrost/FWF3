@@ -146,7 +146,7 @@ content:
       - name: image
         label: Image (Single Only)
         type: image
-      - name: imageAlt
+      - name: alt
         label: Image Description
         type: string
 
@@ -216,7 +216,7 @@ content:
       - name: image
         label: Image (Single Only)
         type: image
-      - name: imageAlt
+      - name: alt
         label: Image Description
         type: string
 
