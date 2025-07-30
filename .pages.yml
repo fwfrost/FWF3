@@ -128,6 +128,7 @@ content:
       - name: url
         label: Url Of Company i.e. (https://lorch.com)
         type: string
+        pattern: ^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$
 
   - name: fab-images
     label: Fabrication Page Images
@@ -135,16 +136,13 @@ content:
     path: src/content/fab-images
     filename: "{primary}.md"
     view:
-      fields: [ title ]
-      primary: title
-      sort: [ title ]
+      fields: [ image, order ]
+      primary: image
+      sort: [ image ]
       default:
-        sort: title
+        sort: order
         order: asc
     fields:
-      - name: title
-        label: Title
-        type: string
       - name: image
         label: Image (Single Only)
         type: image
@@ -200,6 +198,7 @@ content:
       - name: url
         label: Url Of Company i.e. (https://lorch.com)
         type: string
+        pattern: ^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$
 
   - name: machine-images
     label: Machining Page Images
@@ -207,16 +206,13 @@ content:
     path: src/content/machine-images
     filename: "{primary}.md"
     view:
-      fields: [ title ]
-      primary: title
-      sort: [ title ]
+      fields: [ image, order ]
+      primary: image
+      sort: [ image ]
       default:
-        sort: title
+        sort: order
         order: asc
     fields:
-      - name: title
-        label: Title
-        type: string
       - name: image
         label: Image (Single Only)
         type: image
