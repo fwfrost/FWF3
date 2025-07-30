@@ -33,9 +33,8 @@ content:
           format: yyyy-MM-dd'T'HH:mm:ss
       - name: keywords
         label: Keywords (Multiple Allowed)
-        type: string
-        list:
-          collapsible: false
+        type: tags
+        description: Enter keywords for this post, separated by commas or by pressing Enter.
       - name: tags
         label: Tags (Multiple Allowed)
         type: select
